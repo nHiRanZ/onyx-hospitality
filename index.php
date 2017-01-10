@@ -12,6 +12,7 @@
     <title>Welcome | ONYX Hospitality</title>
 
     <?php include('head.php'); ?>
+
 </head>
 
 
