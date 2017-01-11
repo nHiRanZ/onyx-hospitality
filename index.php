@@ -29,24 +29,36 @@ include('header.php');
 ?>
 
 <div class="frame-home">
-
-    <h2>Fixed lalalaaFull-height Side Nav</h2>
-    <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-    <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-    <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
-    <p>Some text..<i class="fa fa-user-o" aria-hidden="true"></i></p>
-    <p>Some text..<i class="fa fa-camera-retro"></i> </p>
-    <p>Some text..<span class="fa-twitter fa"></span></p>
-    <p>Some text..</p>
-    <p>Some text..</p>
-    <p>Some text..</p>
-    <p>Some text..</p>
-    <i class="fa fa-car"></i>
-    <i class="fa fa-car" style="font-size:48px;"></i>
-    <i class="fa fa-car" style="font-size:60px;color:red;"></i>
-
-
+    <div class="main-block">
+    <div class="row">
+        <div class="col-sm-12">
+            <img src="img/home/outing-background.jpg"style="width: 100%; background:rgba(0,0,0,0.8); opacity: 6;">
+        </div>
+    </div>
+    </div>
+    <div class="block">
+    <div class="row">
+        <div class="col-sm-12">
+            <img src="img/home/pubs.jpg"style="width: 100%; background:rgba(0,0,0,0.8); opacity: 6;">
+        </div>
+    </div>
+    </div>
+    <div class="block">
+    <div class="row">
+        <div class="col-sm-12">
+            <img src="img/home/restaurants.jpg"style="width: 100%; background:rgba(0,0,0,0.8); opacity: 6;">
+        </div>
+    </div>
+    </div>
+    <div class="block">
+    <div class="row">
+        <div class="col-sm-12">
+            <img src="img/home/hotels.jpg"style="width: 100%; background:rgba(0,0,0,0.8); opacity: 6;">
+        </div>
+    </div>
+    </div>
 </div>
+
 
 
 <!-- FOOTER SECTION -->

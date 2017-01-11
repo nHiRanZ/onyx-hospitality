@@ -2,17 +2,14 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-
 }
 
 li a {
     display: block;
     color: #fff;
-    padding: 10px 16px;
     text-decoration: none;
-    font-size: 24px;
-    margin: 0px 0px 0px 30px;
+    font-size: 20px;
+    margin: 0px 30px 0px 30px;
 }
 
 li a.active {
@@ -31,7 +28,7 @@ li a:hover:not(.active) {
     height: 82%;
     margin: 5%;
     overflow: auto;
-    width: 25%;
+    width: 30%;
 }
 
 @font-face {
@@ -56,12 +53,34 @@ hr{
 }
 
 .frame-home {
-    margin-left:30%;
-    padding:1px 16px;
+    margin-left: 35%;
     background-color: #fff;
     position: fixed;
     height: 82%;
     margin-top: 5%;
     overflow: auto;
-    width: 65%;
+    width: 60%;
+}
+
+
+.frame-home {
+    margin-left: 35%;
+    background-color: #fff;
+    position: fixed;
+    height: 82%;
+    margin-top: 5%;
+    width: 60%;
+    overflow: hidden;
+}
+
+.block{
+    overflow: hidden;
+    height: 20%;
+    width: 100%;
+}
+
+.main-block{
+    overflow: hidden;
+    height: 40%;
+    width: 100%;
 }
