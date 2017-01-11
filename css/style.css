@@ -1,3 +1,14 @@
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -26,7 +37,8 @@ li a:hover:not(.active) {
     background-color: #1d1e27;
     position: fixed;
     height: 82%;
-    margin: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
     overflow: auto;
     width: 30%;
 }
@@ -57,6 +69,7 @@ hr{
     background-color: #fff;
     position: fixed;
     height: 82%;
+    margin-right: 5%;
     margin-top: 5%;
     overflow: auto;
     width: 60%;
@@ -74,3 +87,22 @@ hr{
     width: 100%;
 }
 
+.page-image-area{
+    position: fixed;
+    height: 82%;
+    margin-left: 5%;
+    margin-top: 5%;
+    overflow: auto;
+    width: 45%;
+}
+
+.page-content-area{
+    background-color: #fff;
+    position: fixed;
+    height: 82%;
+    margin-left: 50%;
+    margin-top: 5%;
+    margin-right: 5%;
+    overflow: auto;
+    width: 45%;
+}
