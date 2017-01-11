@@ -32,7 +32,7 @@ include('header.php');
     <div class="main-block">
     <div class="row">
         <div class="col-sm-12">
-            <img src="img/home/outing-background.jpg"style="width: 100%; background:rgba(0,0,0,0.8); opacity: 6;"
+            <img src="img/home/outing-background.jpg"style="width: 100%; background:rgba(0,0,0,0.8); opacity: 6;">
         </div>
     </div>
     </div>
