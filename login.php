@@ -20,7 +20,34 @@
     <img src="img/login/login-background.jpg"style="width: 100%;">
 </div>
 <div class="page-content-area">
+    <div class="main-block">
+        <div class="row">
+            <div class="col-sm-12">
+                <i class="fa fa-sign-out fa-4x"></i>
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-12">
 
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-12">
+
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-12">
+
+            </div>
+        </div>
+    </div>
 </div>
 
 

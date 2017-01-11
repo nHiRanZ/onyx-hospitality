@@ -86,13 +86,18 @@ hr{
     height: 40%;
     width: 100%;
 }
+.sub-block{
+    overflow: hidden;
+    height: 10%;
+    width: 100%;
+}
 
 .page-image-area{
     position: fixed;
     height: 82%;
     margin-left: 5%;
     margin-top: 5%;
-    overflow: auto;
+    overflow: hidden;
     width: 45%;
 }
 
@@ -103,6 +108,6 @@ hr{
     margin-left: 50%;
     margin-top: 5%;
     margin-right: 5%;
-    overflow: auto;
+    overflow: hidden;
     width: 45%;
 }
