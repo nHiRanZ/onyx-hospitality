@@ -84,3 +84,11 @@ hr{
     height: 40%;
     width: 100%;
 }
+
+/*
+.gradient{
+    background: linear-gradient(
+            rgba(20,20,20, .5),
+            rgba(20,20,20, .5));
+    opacity: 1;
+}*/
