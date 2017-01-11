@@ -19,6 +19,7 @@
 <div class="page-image-area">
     <img src="img/login/login-background.jpg"style="width: 100%;">
 </div>
+<center></center>
 <div class="page-content-area">
     <div class="main-block">
         <div class="row">
@@ -30,26 +31,35 @@
     <div class="sub-block">
         <div class="row">
             <div class="col-sm-12">
-
+                <span class="login">
+                <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                <input class="textbox" type="text">
+                </span>
             </div>
         </div>
     </div>
     <div class="sub-block">
         <div class="row">
             <div class="col-sm-12">
-
+                <span class="login">
+                <i class="fa fa-key fa-2x" aria-hidden="true"></i>
+                <input class="textbox" type="text">
+                </span>
             </div>
         </div>
     </div>
     <div class="sub-block">
         <div class="row">
             <div class="col-sm-12">
-
+                <span class="login">
+                    <button class="btn" type="button">Click Me!</button>
+                
+                </span>
             </div>
         </div>
     </div>
 </div>
-
+</center>
 
 
 <!-- FOOTER SECTION -->
