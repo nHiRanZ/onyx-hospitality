@@ -111,3 +111,12 @@ hr{
     overflow: hidden;
     width: 45%;
 }
+
+span a {
+    color: white;
+    padding: 0px 5px 0px 5px;
+}
+
+span a:hover {
+    color: gray;
+}
