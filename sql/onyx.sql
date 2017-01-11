@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2017 at 10:23 PM
+-- Generation Time: Jan 11, 2017 at 11:52 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -19,6 +19,18 @@ SET time_zone = "+00:00";
 --
 -- Database: `onyx`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `game`
+--
+
+CREATE TABLE `game` (
+  `gameID` int(5) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `QID` int(5) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -95,6 +107,12 @@ CREATE TABLE `userstat` (
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `game`
+--
+ALTER TABLE `game`
+  ADD PRIMARY KEY (`gameID`);
 
 --
 -- Indexes for table `pubs`
