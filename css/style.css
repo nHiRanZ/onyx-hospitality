@@ -62,16 +62,6 @@ hr{
     width: 60%;
 }
 
-.frame-home {
-    margin-left: 35%;
-    background-color: #fff;
-    position: fixed;
-    height: 82%;
-    margin-top: 5%;
-    width: 60%;
-    overflow: hidden;
-}
-
 .block{
     overflow: hidden;
     height: 20%;
