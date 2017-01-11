@@ -17,14 +17,38 @@
 
 <body>
 
-<?php
-$_SESSION["ActivePage"]  = "contact";
-include('header.php');
-?>
+<div class="page-image-area">
+    <img src="img/contact/contact.jpg"style="width: 200%;">
+</div>
+<div class="page-content-area">
+    <div class="main-block">
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-12">
 
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-12">
 
-<h1>This is the contact page</h1>
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-12">
 
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- FOOTER SECTION -->
 <?php include('footer.php'); ?>

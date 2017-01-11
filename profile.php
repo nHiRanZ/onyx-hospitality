@@ -9,21 +9,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Login | ONYX Hospitality</title>
+    <title>Profile | ONYX Hospitality</title>
 
     <?php include('head.php'); ?>
 </head>
 
+
 <body>
 
 <div class="page-image-area">
-    <img src="img/login/login-background.jpg"style="width: 100%;">
+    <img src="img/profile/profile-background.jpg"style="width: 115%;">
 </div>
 <div class="page-content-area">
     <div class="main-block">
         <div class="row">
             <div class="col-sm-12">
-                <center><i class="fa fa-sign-out fa-5x"></i></center>
             </div>
         </div>
     </div>
@@ -49,8 +49,6 @@
         </div>
     </div>
 </div>
-
-
 
 <!-- FOOTER SECTION -->
 <?php include('footer.php'); ?>
