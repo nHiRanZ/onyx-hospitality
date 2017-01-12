@@ -19,7 +19,7 @@
 <div class="page-image-area">
     <img src="img/login/login-background.jpg"style="width: 100%;">
     <div class="highlight">
-        <a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a>
+        <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
     </div>
 </div>
 <center></center>
