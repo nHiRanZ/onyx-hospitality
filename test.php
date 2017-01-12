@@ -20,7 +20,7 @@
 <div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
         <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
-        <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" style="width: 80px; margin-left: 66%;"></a>
+        <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" class="highlightlogo"></a>
     </div>
 
     <div class="col-md-6 col-sm-6 col-xs-12 fill" style="float:left; background-color: blue; padding:0px 0px;">

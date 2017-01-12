@@ -186,18 +186,7 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-.highlight {
-    background-color: rgba(0,0,0,0.65);
-    position: absolute;
-    height: 12%;
-    width: 90%;
-    font-family: Verdana, Geneva, sans-serif;
-    color: #FFF;
-    top: 0;
-    z-index: 1;
-    margin-top: 5%;
-    padding-right: 5%;
-}
+
 
 .icon{
     margin-top: 30%;
@@ -366,6 +355,25 @@ and (max-device-width : 667px) {
         justify-content: center;
     }
 
+    .highlight {
+        background-color: rgba(0,0,0,0.65);
+        position: absolute;
+        height: 8%;
+        width: 100%;
+        font-family: Verdana, Geneva, sans-serif;
+        color: #FFF;
+        top: 0;
+        z-index: 1;
+        /*margin-top: 5%;*/
+        padding-right: 5%;
+    }
+
+    .highlightlogo {
+        width: 80px;
+        margin-left: 60%;
+        margin-top: -5%;
+    }
+
 }
 
 
@@ -427,6 +435,24 @@ and (max-device-width : 1024px) {
         -ms-flex-pack: center;
         -webkit-justify-content: center;
         justify-content: center;
+    }
+
+    .highlight {
+        background-color: rgba(0,0,0,0.65);
+        position: absolute;
+        height: 12%;
+        width: 90%;
+        font-family: Verdana, Geneva, sans-serif;
+        color: #FFF;
+        top: 0;
+        z-index: 1;
+        margin-top: 5%;
+        padding-right: 5%;
+    }
+
+    .highlightlogo {
+        width: 80px;
+        margin-left: 66%;
     }
 
 }
