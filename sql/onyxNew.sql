@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2017 at 11:52 PM
+-- Generation Time: Jan 12, 2017 at 11:38 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -29,7 +29,20 @@ SET time_zone = "+00:00";
 CREATE TABLE `game` (
   `gameID` int(5) NOT NULL,
   `name` varchar(20) NOT NULL,
-  `QID` int(5) NOT NULL
+  `QID` int(5) NOT NULL,
+  `pubID` int(5) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `location`
+--
+
+CREATE TABLE `location` (
+  `Province` varchar(20) NOT NULL,
+  `GameID` int(5) NOT NULL,
+  `Area` varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -44,7 +57,8 @@ CREATE TABLE `pubs` (
   `details` varchar(50) NOT NULL,
   `reservations` int(3) NOT NULL,
   `reviews` decimal(3,0) NOT NULL,
-  `location` varchar(20) NOT NULL
+  `location` varchar(20) NOT NULL,
+  `Rating` decimal(3,0) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
