@@ -41,7 +41,7 @@
             </div>
             <div class="col-sm-7" style="margin-top: 2%">
                 <h5>THE LOUNGE - KAROKE & PUB </h5>
-                <h6>lalalallalalla</h6>
+                <h6>107, marine drive, colombo 5</h6>
             </div>
             <div class="col-sm-2">
                 <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
