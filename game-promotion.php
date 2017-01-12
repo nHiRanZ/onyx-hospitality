@@ -60,8 +60,8 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="button-section">
-                <a href="index.php">
-                    <div class="button-black">Start</div>
+                <a href="game-tutorial.php">
+                    <div class="button-black">PLAY</div>
                 </a>
             </div>
         </div>

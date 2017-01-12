@@ -19,7 +19,7 @@
 <div class="page-image-area" style="float: left">
     <img src="img/game/game-intro.jpg" style="">
     <div class="highlight">
-        <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+        <span><a href="game-promotion.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
     </div>
 </div>
 <center></center>
@@ -63,7 +63,7 @@
             <div class="col-sm-12">
                 <div class="button-section">
                     <a href="index.php">
-                        <div class="button-black">Start</div>
+                        <div class="button-black">START</div>
                     </a>
                 </div>
             </div>
