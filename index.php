@@ -35,7 +35,7 @@ include('header.php');
             <img src="img/home/outing-background.jpg"style="width: 100%; background:rgba(0,0,0,0.8); opacity: 6;">
             <div class="highlight" style="height: 25%;">
                 <span>
-                <a href="index.php"><i class="fa fa-map-pin fa-2x" style="width: 30px; margin-top: 4%; margin-left: 5%; float: left""></i></a>
+                <a href="location.php"><i class="fa fa-map-pin fa-2x" style="width: 30px; margin-top: 4%; margin-left: 5%; float: left""></i></a>
                 <a href="profile.php"><img src="img/home/user.png" alt="Logo" style="width: 30px; margin-top: 4%; margin-right: 10%; float: right"></a>
                     </span>
                 <div class="special-promo">

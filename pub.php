@@ -18,7 +18,7 @@
 <body>
 
 <div class="page-image-area">
-    <img src="img/pubs/pubs-background.jpg"style="width: 110%;">
+    <img src="img/pubs/pubs-background.jpg"style="width: 100%;">
     <div class="highlight">
         <span><a href="search.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
     </div>
