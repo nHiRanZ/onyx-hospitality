@@ -27,10 +27,17 @@
     <div class="highlight">
         <center><a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" style="width: 80px; margin: 24px 10px 20px 5px;"></a></center>
     </div>
-    <div class="main-block">
+    <div class="sub-block">
         <div class="row">
             <div class="col-sm-12">
-                <center><i class="fa fa-sign-out fa-5x icon"></i></center>
+
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-12">
+
             </div>
         </div>
     </div>
