@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Reservation | ONYX Hospitality</title>
+    <title>Location | ONYX Hospitality</title>
 
     <?php include('head.php'); ?>
 </head>
@@ -18,6 +18,7 @@
 <body>
 
 <div class="page-image-area">
+    <!--Map goes here, temporary image added-->
     <img src="img/reservation/reservation-background.jpg"style="width: 100%;">
     <div class="highlight">
         <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
