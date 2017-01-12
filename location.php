@@ -56,7 +56,7 @@
             </div>
             <div class="col-sm-7" style="margin-top: 2%">
                 <h5>MISTY - THE COCKTAIL BAR </h5>
-                <h6>97, Alexander Place, colombo 5</h6>
+                <h6>89, Alexander Place, colombo 8</h6>
             </div>
             <div class="col-sm-2">
                 <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
@@ -69,8 +69,8 @@
                 <img src="img/pubs/bar-logo2.png" style="width: 100%">
             </div>
             <div class="col-sm-7" style="margin-top: 2%">
-                <h5>THE LOUNGE - KAROKE & PUB </h5>
-                <h6>lalalallalalla</h6>
+                <h5>THE BAR CODE </h5>
+                <h6>5/7, Dutch House, Colombo 7</h6>
             </div>
             <div class="col-sm-2">
                 <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
@@ -83,8 +83,8 @@
                 <img src="img/pubs/bar-logo1.png" style="width: 100%">
             </div>
             <div class="col-sm-7" style="margin-top: 2%">
-                <h5>THE LOUNGE - KAROKE & PUB </h5>
-                <h6>lalalallalalla</h6>
+                <h5>SERENDIB BREWERES & CO </h5>
+                <h6>105, Francis Place, Colombo 5</h6>
             </div>
             <div class="col-sm-2">
                 <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
@@ -97,8 +97,8 @@
                 <img src="img/pubs/bar-logo5.png" style="width: 100%">
             </div>
             <div class="col-sm-7" style="margin-top: 2%">
-                <h5>THE LOUNGE - KAROKE & PUB </h5>
-                <h6>lalalallalalla</h6>
+                <h5>SALUD - WINE SPECIALIST </h5>
+                <h6>10, ALBERT CRESENT, COLOMBO 4</h6>
             </div>
             <div class="col-sm-2">
                 <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
