@@ -68,7 +68,7 @@ include('header.php');
     <div class="block">
     <div class="row">
         <div class="col-sm-12">
-            <img src="img/home/hotels.jpg"style="width:">
+            <img src="img/home/hotels.jpg"style="width: 100%;">
         </div>
     </div>
     </div>
