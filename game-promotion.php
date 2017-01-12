@@ -63,7 +63,7 @@
 
                 <div class="col-sm-12 col-md-12 col-xs-12">
 
-                    <a href="index.php">
+                    <a href="http://eepurl.com/cxmkXv">
                         <div class="button-white">GET NEWSLETTER</div>
                     </a>
 
