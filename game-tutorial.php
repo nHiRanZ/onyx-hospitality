@@ -61,9 +61,9 @@
     <div class="sub-block">
         <div class="row">
             <div class="col-sm-12">
-                <div class="login">
+                <div class="button-section">
                     <a href="index.php">
-                        <div class="button-btn">Start</div>
+                        <div class="button-black">Start</div>
                     </a>
                 </div>
             </div>

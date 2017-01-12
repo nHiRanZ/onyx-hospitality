@@ -131,7 +131,7 @@ h6 a:hover {
     color: gray;
 }
 
-.login{
+.button-section{
     margin-top: 2%;
     margin-left: 15%;
 }
@@ -148,11 +148,11 @@ h6 a:hover {
     outline:0;
 }
 
-.button-login {
+.button-white {
     background-color: #d6d6d6;
     border-width: 12px;
     border-radius: 27px;
-    color: black;
+    color: #000000;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -162,24 +162,11 @@ h6 a:hover {
     width: 82%;
 }
 
-.button-signup {
-    background-color: #888888;
-    border-radius: 27px;
-    color: #ffffff;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 82%;
-}
-
-.button-btn {
+.button-black {
     background-color: #000;
     border-width: 12px;
     border-radius: 27px;
-    color: white;
+    color: #ffffff;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
