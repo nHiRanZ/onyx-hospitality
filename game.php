@@ -195,7 +195,7 @@
             <div class="col-sm-12">
                 <div class="button-section">
                     <a href="index.php">
-                        <div class="button-white">Login</div>
+                        <div class="button-white">Submit</div>
                     </a>
                 </div>
             </div>
