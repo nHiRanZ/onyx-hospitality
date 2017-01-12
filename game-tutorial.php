@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="button-section">
-                    <a href="index.php">
+                    <a href="game.php">
                         <div class="button-black">START</div>
                     </a>
                 </div>
