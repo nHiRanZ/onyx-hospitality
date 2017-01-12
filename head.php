@@ -5,6 +5,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
+<?php include('config.php'); ?>
 
 <!-- Font Awesome -->
 <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.css">-->

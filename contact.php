@@ -12,6 +12,7 @@
     <title>Contact | ONYX Hospitality</title>
 
     <?php include('head.php'); ?>
+
 </head>
 
 
