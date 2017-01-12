@@ -43,7 +43,7 @@ include('header.php');
                         <h4>SPECIAL PROMOTION</h4>
                         <h6>Play our special promotion Treasure Hunt <br> and stand a chance to win special prizes</h6>
                         <div class="game-promotion">
-                            <a href="game-promotion.php" ><div class="button-game-promo">PLAY</div></a>
+                            <a href="game-promotion-WIP.php" ><div class="button-game-promo">PLAY</div></a>
                         </div>
                     </center>
                 </div>

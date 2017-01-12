@@ -12,86 +12,70 @@
     <title>Game Promotion | ONYX Hospitality</title>
 
     <?php include('head.php'); ?>
+
 </head>
 
 <body>
 
-<div class="page-image-area" style="float: left">
-    <img src="img/game/game-promo.jpg" style="width: 110%;">
+<div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
         <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+        <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" class="highlightlogo"></a>
     </div>
-</div>
-<center></center>
-<div class="page-content-area" style="float:right">
-    <div class="highlight">
-        <center><a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo"
-                                         style="width: 80px; margin: 24px 10px 20px 5px;"></a></center>
-    </div>
-    <div class="block">
-        <div class="row">
-        </div>
-    </div>
-    <div class="sub-block"
-    ">
-    <div class="row">
-        <div class="col-sm-12">
-            <center><h3 style="margin-left: 5%; margin-right: 5%;">PLAY AND WIN!</h3></center>
-        </div>
-    </div>
-</div>
-<div class="sub-block">
-    <div class="row">
-        <div class="col-sm-12">
-            <center><p style="margin-left: 5%; margin-right: 5%;">Take part in our weekly treasure hunt adventure game
-                    and stand a chance to win a weekend getaway with your loved ones to: </p></center>
-        </div>
-    </div>
-</div>
-<div class="block">
-    <div class="row">
-        <div class="col-sm-12">
-                <center><a href="index.php"><img src="img/pubs/bar-logo2.png" alt="Logo"
-                                                 style="width: 40%;"></a></center>
-        </div>
-    </div>
-</div>
-<div class="sub-block">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="button-section">
-                <a href="game-tutorial.php">
-                    <div class="button-black">PLAY</div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="sub-block">
-    <div class="row">
-        <div class="col-sm-12">
-            <center><p style="margin-left: 5%; margin-right: 5% ;margin-top: 5%;">We have challenges every week make sure you check them
-                    out</p></center>
-        </div>
-    </div>
-</div>
 
-<div class="sub-block">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="button-section">
-                <a href="index.php">
-                    <div class="button-white">Get Newsletter</div>
-                </a>
-            </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 fill" style="float:left; background-color: blue; padding:0px 0px;">
+
+        <img src="img/game/game-promo.jpg" style="">
+    </div>
+
+    <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="">
+
+        <div class="col-sm-12 col-md-12 col-xs-12">
+            <center>
+                <div class="row">
+                    <h3 style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%;">PLAY AND WIN!</h3>
+                </div>
+
+                <div class="row">
+                    <p style="margin-left: 5%; margin-right: 5%;">Take part in our weekly treasure hunt adventure game
+                        and stand a chance to win a weekend getaway with your loved ones to:</p>
+                </div>
+
+                <div class="row">
+                    <a href="index.php"><img src="img/pubs/bar-logo2.png" alt="Logo"
+                                             style="width: 40%;"></a>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+
+                        <a href="game-tutorial.php">
+                            <div class="button-black">PLAY</div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <p style="margin-left: 5%; margin-right: 5% ;margin-top: 5%; margin-bottom: 5%;">We have challenges
+                    every week make sure you check them
+                    out</p>
+
+                <div class="col-sm-12 col-md-12 col-xs-12">
+
+                    <a href="index.php">
+                        <div class="button-white">GET NEWSLETTER</div>
+                    </a>
+
+                </div>
+
+            </center>
         </div>
     </div>
+
 </div>
 
 </div>
-</div>
-</center>
-
 
 <!-- FOOTER SECTION -->
 <?php include('footer.php'); ?>
