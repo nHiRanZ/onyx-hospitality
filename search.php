@@ -33,12 +33,13 @@
             </div>
         </div>
     </div>
+
     <div class="block">
         <div class="row">
             <div class="col-sm-12">
                 <div class="col-sm-12"><h3>LOCATE PUBS</h3></div>
                 <span>
-                    //giving the options to the user
+
                 <div class="col-sm-4">
                     PROVINCE<br>
                 <select>
