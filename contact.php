@@ -9,52 +9,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Contact | ONYX Hospitality</title>
+    <title>Game Introduction | ONYX Hospitality</title>
 
     <?php include('head.php'); ?>
 
 </head>
 
+<body style="height: 100%">
 
-<body>
-
-<div class="page-image-area">
-    <img src="img/contact/contact.jpg"style="width: 200%;">
+<div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
         <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+        <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" class="highlightlogo"></a>
     </div>
-</div>
-<div class="page-content-area">
-    <div class="highlight">
-        <center><a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" style="width: 80px; margin: 24px 10px 20px 5px;"></a></center>
-    </div>
-    <div class="main-block">
-        <div class="row">
-            <div class="col-sm-12">
-            </div>
-        </div>
-    </div>
-    <div class="sub-block">
-        <div class="row">
-            <div class="col-sm-12">
 
-            </div>
-        </div>
-    </div>
-    <div class="sub-block">
-        <div class="row">
-            <div class="col-sm-12">
+    <div class="col-md-6 col-sm-6 col-xs-12 fill" style="float:left; background-color: blue; padding:0px 0px;">
 
-            </div>
-        </div>
+        <img src="img/contact/contact.jpg" style="">
     </div>
-    <div class="sub-block">
-        <div class="row">
-            <div class="col-sm-12">
 
+    <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xs-12">
+                <center>
+                    <h3>CONTACT</h3>
+                    <i class="fa fa-phone fa-3x"></i>
+                    <h4 style="margin-left: 5%; margin-right: 5%;">+94 11 2736736</h4>
+                    <h4 style="margin-left: 5%; margin-right: 5%;">+94 77 1234567</h4>
+                    <br>
+                    <i class="fa fa-envelope-o fa-3x"></i>
+                    <h4 style="margin-left: 5%; margin-right: 5%;">mail@onyx.lk</h4>
+                    <h4 style="margin-left: 5%; margin-right: 5%;">contact@onyx.lk</h4>
+                    <br>
+                    <i class="fa fa-home fa-3x"></i>
+                    <h4 style="margin-left: 5%; margin-right: 5%;">104, Alexander Place, Colombo 07</h4>
+                </center>
             </div>
         </div>
+
     </div>
+
 </div>
 
 <!-- FOOTER SECTION -->
