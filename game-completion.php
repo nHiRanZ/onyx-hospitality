@@ -13,9 +13,27 @@
 
     <?php include('head.php'); ?>
 
+    <script>
+        function appendElements() {
+            var listElementOne = document.getElementById("list-element-one");
+            var one = JSON.parse(sessionStorage.getItem("submittedAnswers"));
+
+            var element = document.getElementById("list-parent");
+
+            for (i = 0; i < one.length; i++) {
+                var para = document.createElement("li");
+                var node = document.createTextNode(one[i]["value"]);
+                para.appendChild(node);
+
+                element.appendChild(para);
+            }
+
+        }
+    </script>
+
 </head>
 
-<body style="height: 100%">
+<body style="height: 100%" onload="appendElements()">
 
 <div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
@@ -34,17 +52,7 @@
                 <center><p style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; margin-top: 5%;">You have
                         completed the game. Good Job!</p>
                     <div class="col-sm-12 col-md-12 col-xs-12" style="background-color: #2c2e3c; margin-bottom: 5%;">
-                        <ol class="w3-ul" style="color: white;font-family: 'Caviar-Dreams';">
-                            <li>Jill</li>
-                            <li>Eve</li>
-                            <li>Adam</li>
-                            <li>Jill</li>
-                            <li>Eve</li>
-                            <li>Adam</li>
-                            <li>Jill</li>
-                            <li>Eve</li>
-                            <li>Adam</li>
-                            <li>Jill</li>
+                        <ol id="list-parent" class="w3-ul" style="color: white;font-family: 'Caviar-Dreams';">
                         </ol>
 
                     </div>
@@ -56,7 +64,7 @@
                     <div class="col-sm-12 col-md-12 col-xs-12">
                         <div class="">
                             <a href="index.php">
-                                <div class="button-white">AWESOME</div>
+                                <div class="button-white">AWESOME!</div>
                             </a>
                         </div>
                     </div>

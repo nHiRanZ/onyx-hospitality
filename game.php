@@ -474,7 +474,9 @@
 
         <script>
             $("form").submit(function () {
-                console.log($(this).serializeArray());
+                sessionStorage['submittedAnswers'] = JSON.stringify($(this).serializeArray());
+
+                window.location.replace("game-completion.php");
                 return false;
             });
         </script>
