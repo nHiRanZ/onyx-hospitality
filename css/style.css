@@ -193,3 +193,25 @@ a:hover, a:focus {
 .icon{
     margin-top: 30%;
 }
+
+.special-promo{
+    font-family: 'Caviar-Dreams';
+    color: #ffffff;
+    margin-top: 15%;
+}
+
+.game-promotion{
+    width: 30%;
+}
+
+.button-game-promo{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 27px;
+    color: #ffffff;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

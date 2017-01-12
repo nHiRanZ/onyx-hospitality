@@ -38,6 +38,15 @@ include('header.php');
                 <a href="index.php"><span><a href="index.php"><i class="fa fa-map-pin fa-2x" style="width: 30px; margin-top: 4%; margin-left: 5%; float: left""></i></a></span></a>
                 <a href="profile.php"><img src="img/home/user.png" alt="Logo" style="width: 30px; margin-top: 4%; margin-right: 10%; float: right"></a>
                     </span>
+                <div class="special-promo">
+                    <center>
+                        <h4>SPECIAL PROMOTION</h4>
+                        <h6>Play our special promotion Treasure Hunt <br> and stand a chance to win special prizes</h6>
+                        <div class="game-promotion">
+                            <a href="index.php" ><div class="button-game-promo">PLAY</div></a>
+                        </div>
+                    </center>
+                </div>
             </div>
         </div>
     </div>
