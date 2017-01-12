@@ -43,9 +43,7 @@
     <div class="sub-block">
         <div class="row">
             <div class="col-sm-12">
-                <center><p style="margin-left: 5%; margin-right: 5%;">You have to Answer 10 Simple Questions which are related to ONYX Group of Pubs, Hotels and
-                        Restaurants. In each level, you’re given hints to accomplish the task at hand. You have 72 Hours
-                        once you start the game*. You can resume the game from your Profile.</p></center>
+                <center><p style="margin-left: 5%; margin-right: 5%;">You have to Answer 10 Simple Questions which are related to ONYX Group of Pubs, Hotels and Restaurants. In each level, you’re given hints to accomplish the task at hand. You have 72 Hours once you start the game*. You can resume the game from your Profile.</p></center>
             </div>
         </div>
     </div>
