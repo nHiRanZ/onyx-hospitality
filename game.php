@@ -13,12 +13,57 @@
 
     <?php include('head.php'); ?>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <style>
         #map {
             height: 100%;
             width: 100%;
         }
+
+        .carousel-control {
+            position: absolute;
+            top: 40%;
+            left: 15px;
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            font-size: 30px;
+            font-weight: 100;
+            line-height: 30px;
+            color: #ffffff;
+            text-align: center;
+            background: #222222;
+            border: 3px solid #ffffff;
+            -webkit-border-radius: 23px;
+            -moz-border-radius: 23px;
+            border-radius: 23px;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+
+        .carousel-control.right {
+            right: 15px;
+            left: auto;
+        }
+
+        .submit-button {
+            background-color: #d6d6d6;
+            border-radius: 27px;
+            color: #000000;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            width: 82%;
+        }
     </style>
+
+
+
+
 </head>
 
 
@@ -79,13 +124,80 @@
 
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 16,
-                center: new google.maps.LatLng(6.8652715,79.8598505),
+                center: new google.maps.LatLng(6.8652715, 79.8598505),
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
-                styles: [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
+                styles: [{
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"color": "#d3d3d3"}]
+                }, {
+                    "featureType": "transit",
+                    "stylers": [{"color": "#808080"}, {"visibility": "off"}]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"visibility": "on"}, {"color": "#b3b3b3"}]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"color": "#ffffff"}]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"weight": 1.8}]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"color": "#d7d7d7"}]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"visibility": "on"}, {"color": "#ebebeb"}]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#a7a7a7"}]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"color": "#ffffff"}]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"color": "#ffffff"}]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"visibility": "on"}, {"color": "#efefef"}]
+                }, {
+                    "featureType": "road",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{"color": "#696969"}]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{"visibility": "on"}, {"color": "#737373"}]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels.icon",
+                    "stylers": [{"visibility": "off"}]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels",
+                    "stylers": [{"visibility": "off"}]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"color": "#d6d6d6"}]
+                }, {
+                    "featureType": "road",
+                    "elementType": "labels.icon",
+                    "stylers": [{"visibility": "off"}]
+                }, {}, {"featureType": "poi", "elementType": "geometry.fill", "stylers": [{"color": "#dadada"}]}]
             });
 
             var myCity = new google.maps.Circle({
-                center: new google.maps.LatLng(6.8652715,79.8598505),
+                center: new google.maps.LatLng(6.8652715, 79.8598505),
                 radius: 500,
                 strokeColor: "#727272",
                 strokeOpacity: 0.8,
@@ -96,7 +208,7 @@
             });
 
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(6.8652715,79.8598505),
+                position: new google.maps.LatLng(6.8652715, 79.8598505),
                 map: map,
                 icon: 'img/game/user-location-marker.png'
             });
@@ -126,7 +238,7 @@
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGxiTrbpGgSN56MFCPy6V5tNA5R67ppOM&callback=initMap">
     </script>
-<!--    <img src="img/reservation/reservation-background.jpg" style="width: 100%;">-->
+    <!--    <img src="img/reservation/reservation-background.jpg" style="width: 100%;">-->
     <div class="highlight">
         <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
     </div>
@@ -142,65 +254,232 @@
             </div>
         </div>
     </div>
-    <div class="sub-block">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="button-section">
-                    <h4 style="float: left">Target 1/10</h4>
-                    <h4 style="float: right; margin-right: 15%;">completion 0%</h4>
+
+
+    <form>
+        <div>
+            <div id="questions" class="carousel slide" data-ride="carousel" data-interval="false" pagination="false">
+
+                <br>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="sub-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="button-section">
+                                        <h4 style="float: left">Target 1/4</h4>
+                                        <!--                                    <h4 style="float: right; margin-right: 15%;">completion 0%</h4>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="button-section">
+                                        <div class="question-container"><h4>What is the burger of the day, served at
+                                                <strong>The Bar Code</strong>
+                                                today?</h4></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="main-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <center>
+                                        <div class="btn-group" data-toggle="buttons" id="question1">
+                                            <div class="radio">
+                                                <label><input type="radio" name="question1" id="q1" name="question[1]" value="The Chicken Run">The Chicken Run</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question1" id="q2" name="question[1]" value="Burger From Hell">Burger From Hell</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question1" id="q3" name="question[1]" value="Going Fishin'">Going Fishin'</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question1" id="q4" name="question[1]" value="Bacon Madness">Bacon Madness</label>
+                                            </div>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="sub-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="button-section">
+                                        <h4 style="float: left">Target 2/4</h4>
+                                        <!--                                    <h4 style="float: right; margin-right: 15%;">completion 0%</h4>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="button-section">
+                                        <div class="question-container"><h4>When is the Ladies Night Promo Available at
+                                                <strong>MYSTY</strong>?</h4></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="main-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <center>
+                                        <div class="btn-group" data-toggle="buttons" id="question2">
+                                            <div class="radio">
+                                                <label><input type="radio" name="question2" id="q5" name="question[2]" value="Tuesday">Tuesday</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question2" id="q6" name="question[2]" value="Friday">Friday</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question2" id="q7" name="question[2]" value="Saturday">Saturday</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question2" id="q8" name="question[2]" value="Sunday">Sunday</label>
+                                            </div>
+                                       </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="sub-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="button-section">
+                                        <h4 style="float: left">Target 3/4</h4>
+                                        <!--                                    <h4 style="float: right; margin-right: 15%;">completion 0%</h4>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="button-section">
+                                        <div class="question-container"><h4>Which Ale is selected as the Speciality of
+                                                the
+                                                House in <strong>Serendib Brewers</strong>?</strong></h4></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="main-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <center>
+                                        <div class="btn-group" data-toggle="buttons" id="question3">
+                                            <div class="radio">
+                                                <label><input type="radio" name="question3" id="q9" name="question[3]" value="Three Floyds">Three Floyds</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question3" id="q10" name="question[3]" value="Sierra Nevada Pale Ale">Sierra Nevada Pale
+                                                    Ale</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question3" id="q11" name="question[3]" value="Molson Canadian">Molson Canadian</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question3" id="q12" name="question[3]" value="English Dark Mild Ale">English Dark Mild Ale</label>
+                                            </div>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="sub-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="button-section">
+                                        <h4 style="float: left">Target 4/4</h4>
+                                        <!--                                    <h4 style="float: right; margin-right: 15%;">completion 0%</h4>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="button-section">
+                                        <div class="question-container"><h4>When was <strong>The Lounge - Karoke &
+                                                    Pub</strong> established?</strong></h4></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="main-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <center>
+                                        <div class="btn-group" data-toggle="buttons" id="question4">
+                                            <div class="radio">
+                                                <label><input type="radio" name="question4" id="q13" name="question[4]" value="1994">1994</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question4" id="q14" name="question[4]" value="1996">1996</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question4" id="q15" name="question[4]" value="1999">1999</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="question4" id="q16" name="question[4]" value="2000">2000</label>
+                                            </div>
+                                        </div>
+                                    </center>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#questions" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#questions" data-slide="next">›</a>
+            </div>
+        </div>
+
+
+        <div class="sub-block">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="button-section">
+                        <input type="submit" class="submit-button" value="Submit"></input>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="block">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="button-section">
-                    <div class="question-container"><h4>What is the burger of the day, served at the Bar Code
-                            today?</h4></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="main-block">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="button-section">
-                    <div class="answer-button-section">
-                        <input type="radio" name="radio" id="radio1" class="radio" checked/>
-                        <label class="answer-label" for="radio1">First Option</label>
-                    </div>
+        <script>
+            $("form").submit(function () {
+                console.log($(this).serializeArray());
+                return false;
+            });
+        </script>
 
-                    <div class="answer-button-section">
-                        <input type="radio" name="radio" id="radio2" class="radio"/>
-                        <label class="answer-label" for="radio2">Second Option</label>
-                    </div>
-
-                    <div class="answer-button-section">
-                        <input type="radio" name="radio" id="radio3" class="radio"/>
-                        <label class="answer-label" for="radio3">Third Option</label>
-                    </div>
-
-                    <div class="answer-button-section">
-                        <input type="radio" name="radio" id="radio4" class="radio"/>
-                        <label class="answer-label" for="radio4">Fourth Option</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="sub-block">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="button-section">
-                    <a href="index.php">
-                        <div class="button-white">Submit</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </form>
 </div>
 
 <!-- FOOTER SECTION -->
