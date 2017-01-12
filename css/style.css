@@ -178,3 +178,18 @@ a:hover, a:focus {
 
     text-decoration: none;
 }
+
+.highlight {
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    height: 12%;
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFF;
+    top: 0;
+    z-index: 1;
+}
+
+.icon{
+    margin-top: 30%;
+}

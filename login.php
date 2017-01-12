@@ -18,13 +18,26 @@
 
 <div class="page-image-area">
     <img src="img/login/login-background.jpg"style="width: 100%;">
+    <div class="highlight">
+        <a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a>
+    </div>
 </div>
 <center></center>
 <div class="page-content-area">
+    <div class="highlight">
+        <center><a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" style="width: 80px; margin: 24px 10px 20px 5px;"></a></center>
+    </div>
     <div class="main-block">
         <div class="row">
             <div class="col-sm-12">
-                <center><i class="fa fa-sign-out fa-5x"></i></center>
+                <center><i class="fa fa-sign-out fa-5x icon"></i></center>
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-12">
+
             </div>
         </div>
     </div>
