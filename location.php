@@ -19,7 +19,7 @@
 
 <div class="page-image-area">
     <!--Map goes here, temporary image added-->
-    <img src="img/reservation/reservation-background.jpg"style="width: 100%;">
+    <img src="img/home/map.jpg"style="width: 100%;">
     <div class="highlight">
         <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
     </div>
@@ -47,6 +47,7 @@
                 <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
             </div>
         </div>
+
     </div>
     <div class="sub-block">
         <div class="row">
@@ -54,8 +55,8 @@
                 <img src="img/pubs/bar-logo3.png" style="width: 100%">
             </div>
             <div class="col-sm-7" style="margin-top: 2%">
-                <h5>THE LOUNGE - KAROKE & PUB </h5>
-                <h6>lalalallalalla</h6>
+                <h5>MISTY - THE COCKTAIL BAR </h5>
+                <h6>97, Alexander Place, colombo 5</h6>
             </div>
             <div class="col-sm-2">
                 <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
@@ -80,6 +81,20 @@
         <div class="row">
             <div class="col-sm-3">
                 <img src="img/pubs/bar-logo1.png" style="width: 100%">
+            </div>
+            <div class="col-sm-7" style="margin-top: 2%">
+                <h5>THE LOUNGE - KAROKE & PUB </h5>
+                <h6>lalalallalalla</h6>
+            </div>
+            <div class="col-sm-2">
+                <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="img/pubs/bar-logo5.png" style="width: 100%">
             </div>
             <div class="col-sm-7" style="margin-top: 2%">
                 <h5>THE LOUNGE - KAROKE & PUB </h5>
