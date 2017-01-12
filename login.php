@@ -51,10 +51,27 @@
     <div class="sub-block">
         <div class="row">
             <div class="col-sm-12">
-                <span class="login">
-                    <button class="btn" type="button">Click Me!</button>
-                
-                </span>
+                <div class="login">
+                    <a href="index.php" ><div class="button-login">Login</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="login">
+                    <a href="index.php" ><div class="button-signup">Sign up</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <span class="col-sm-12">
+                <h6>
+                    <center><a href="index.php"><div>Forgot Password?</div></a></center>
+                </h6>
             </div>
         </div>
     </div>
