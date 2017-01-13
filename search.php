@@ -75,7 +75,7 @@
                 <h6>107, marine drive, colombo 5</h6>
             </div>
             <div class="col-sm-2">
-                <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
+                <a class="arrow" href="the-bar-code.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
                 <h6>89, Alexander Place, colombo 8</h6>
             </div>
             <div class="col-sm-2">
-                <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
+                <a class="arrow" href="the-bar-code.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
             </div>
         </div>
     </div>
@@ -103,7 +103,7 @@
                 <h6>105, Francis Place, Colombo 5</h6>
             </div>
             <div class="col-sm-2">
-                <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
+                <a class="arrow" href="the-bar-code.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
             </div>
         </div>
     </div>
@@ -117,7 +117,7 @@
                 <h6>5/7, Dutch House, Colombo 7</h6>
             </div>
             <div class="col-sm-2">
-                <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
+                <a class="arrow" href="the-bar-code.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
             </div>
         </div>
     </div>
@@ -131,7 +131,7 @@
                 <h6>107, marine drive, colombo 5</h6>
             </div>
             <div class="col-sm-2">
-                <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
+                <a class="arrow" href="the-bar-code.php"><i class="fa fa-angle-right fa-3x" style="margin: 15px 15px; "></i></a></span>
             </div>
         </div>
     </div>

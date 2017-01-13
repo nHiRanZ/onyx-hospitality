@@ -13,6 +13,7 @@
 
     <?php include('head.php'); ?>
 
+
 </head>
 
 <body style="height: 100%">
@@ -38,10 +39,10 @@
                         </div>
                         <div class="col-sm-7 col-md-7 col-xs-7" style="margin-top: 2%">
                             <h5>THE LOUNGE - KAROKE & PUB </h5>
-                            <h6>107, marine drive, colombo 5</h6>
+                            <h6>107, Marine Drive, Colombo 5</h6>
                         </div>
                         <div class="col-sm-2 col-md-2 col-xs-2">
-                            <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 5px 15px; "></i></a></span>
+                            <a class="arrow" href="the-lounge-pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 5px 15px; "></i></a></span>
                         </div>
                     </div>
                     <div class="row">
@@ -53,7 +54,7 @@
                             <h6>89, Alexander Place, colombo 8</h6>
                         </div>
                         <div class="col-sm-2 col-md-2 col-xs-2">
-                            <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 5px 15px; "></i></a></span>
+                            <a class="arrow" href="misty-pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 5px 15px; "></i></a></span>
                         </div>
                     </div>
                     <div class="row">
@@ -65,7 +66,7 @@
                             <h6>5/7, Dutch House, Colombo 7</h6>
                         </div>
                         <div class="col-sm-2 col-md-2 col-xs-2">
-                            <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 5px 15px; "></i></a></span>
+                            <a class="arrow" href="the-bar-code.php"><i class="fa fa-angle-right fa-3x" style="margin: 5px 15px; "></i></a></span>
                         </div>
                     </div>
                     <div class="row">
@@ -73,11 +74,11 @@
                             <img src="img/pubs/bar-logo1.png" style="width: 100%">
                         </div>
                         <div class="col-sm-7 col-md-7 col-xs-7" style="margin-top: 2%">
-                            <h5>SERENDIB BREWERES & CO </h5>
+                            <h5>SERENDIB BREWERS & CO </h5>
                             <h6>105, Francis Place, Colombo 5</h6>
                         </div>
                         <div class="col-sm-2 col-md-2 col-xs-2">
-                            <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 5px 5px; "></i></a></span>
+                            <a class="arrow" href="serendib-brewers.php"><i class="fa fa-angle-right fa-3x" style="margin: 5px 5px; "></i></a></span>
                         </div>
                     </div>
                     <div class="row">
@@ -86,10 +87,10 @@
                         </div>
                         <div class="col-sm-7 col-md-7 col-xs-7" style="margin-top: 2%">
                             <h5>SALUD - WINE SPECIALIST </h5>
-                            <h6>10, ALBERT CRESENT, COLOMBO 4</h6>
+                            <h6>10, Albert Cresent, Colombo 4</h6>
                         </div>
                         <div class="col-sm-2 col-md-2 col-xs-2">
-                            <a class="arrow" href="pub.php"><i class="fa fa-angle-right fa-3x" style="margin: 5px 5px; "></i></a></span>
+                            <a class="arrow" href="salud-wine.php"><i class="fa fa-angle-right fa-3x" style="margin: 5px 5px; "></i></a></span>
                         </div>
                     </div>
 

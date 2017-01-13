@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Game Introduction | ONYX Hospitality</title>
+    <title>Salud Wines | ONYX Hospitality</title>
     <script>
         function openCity(evt, cityName) {
             var i, x, tablinks;
@@ -36,11 +36,11 @@
 
 <div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
-        <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+        <span><a href="#" onclick="history.go(-1)"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
         <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" class="highlightlogo"></a>
     </div>
 
-    <div class="col-md-6 col-sm-6 col-xs-12 fill" style="float:left; background-color: blue; padding:0px 0px;">
+    <div class="col-md-6 col-sm-6 col-xs-12 fill" style="float:left; background-color: #2c2e3c; padding:0px 0px;">
 
         <img src="img/pubs/pubs-background.jpg" style="">
     </div>
@@ -48,10 +48,10 @@
     <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-xs-12">
-                <center><img src="img/pubs/bar-logo2.png" style="width: 200px;" alt="Logo"></center>
+                <center><img src="img/pubs/bar-logo1.png" style="width: 200px;" alt="Logo"></center>
                 <div class="col-sm-12 col-md-12 col-xs-12" style="margin-left: 18px">
-                    <h4>THE BAR CODE</h4>
-                    <p>89, Alexander Place, Colombo 07</p>
+                    <h4>SALUD - WINE SPECIALIST</h4>
+                    <p>10, Albert Cresent, Colombo 4</p>
                 </div>
                 <div class="col-sm-12 col-md-12 col-xs-12">
                     <div class="w3-container">
@@ -85,17 +85,19 @@
                                 Enjoy the finest German beer in Colombo; try a variety of wine, spirits, champagne and
                                 our home special beer cocktails. Amuse yourself with a diverse variety of different
                                 cocktails. Come in, have a drink and effortlessly blend into your comfortable
-                                surroundings.
+                                surroundings. </p>
 
                         </div>
 
                         <div id="Tokyo" class="w3-container city" style="display:none">
-                            <h6>Ranuk</h6>
-                            <p>Taste the best home-made German Sausages, Burgers, Schnitzel & Grills that will add
-                                flavour to your time with us.</p>
-                            <h6>Crishane</h6>
-                            <p>Taste the best home-made German Sausages, Burgers, Schnitzel & Grills that will add
-                                flavour to your time with us.</p>
+                            <h4>Ranuk</h4>
+                            <p>"Taste the best home-made German Sausages, Burgers, Schnitzel & Grills that will add
+                                flavour to your time with us."</p>
+
+                            <hr>
+
+                            <h4>Crishane</h4>
+                            <p>"Cheapest beer in town, here at The Bar Code"</p>
                         </div>
                     </div>
                 </div>
@@ -103,7 +105,7 @@
                     <div class="col-sm-12 col-md-12 col-xs-12">
                         <div class="">
                             <a href="game.php">
-                                <div class="button-black">START</div>
+                                <div class="button-black">MAKE RESERVATION</div>
                             </a>
                         </div>
                     </div>
