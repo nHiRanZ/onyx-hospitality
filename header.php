@@ -8,6 +8,6 @@
         <li><a href="reservation.php">RESERVATIONS<i class="fa fa-tags" style="float: right"></i></a><hr></li>
         <li><a href="about.php">ABOUT US<i class="fa fa-commenting-o" style="float: right"></i></a><hr></li>
         <li><a href="contact.php">CONTACT<i class="fa fa-phone" style="float: right"></i></a><hr></li>
-        <li><a href="login.php">LOGOUT<i class="fa fa-sign-out" style="float: right"></i></a><br></li>
+        <li><a href="login.php">LOGOUT<i class="fa fa-sign-out" style="float: right"></i></a></li>
     </ul>
 </header>
