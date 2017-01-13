@@ -68,8 +68,8 @@
 
 
 <body>
-<div class="row">
-<div class="page-image-area col-md-6">
+
+<div class="page-image-area">
     <div id="map"></div>
     <script>
         function initMap() {
@@ -239,10 +239,21 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGxiTrbpGgSN56MFCPy6V5tNA5R67ppOM&callback=initMap">
     </script>
     <!--    <img src="img/reservation/reservation-background.jpg" style="width: 100%;">-->
-
+    <div class="highlight">
+        <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+    </div>
 </div>
-<div class="page-content-area col-md-6">
-
+<div class="page-content-area">
+    <div class="highlight">
+        <center><a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo"
+                                         style="width: 80px; margin: 24px 10px 20px 5px;"></a></center>
+    </div>
+    <div class="sub-block">
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
+        </div>
+    </div>
 
 
     <form>
@@ -339,7 +350,7 @@
                                             <div class="radio">
                                                 <label><input type="radio" name="question2" id="q8" name="question[2]" value="Sunday">Sunday</label>
                                             </div>
-                                        </div>
+                                       </div>
                                     </center>
                                 </div>
                             </div>
@@ -476,10 +487,9 @@
 
     </form>
 </div>
-</div>
 
 <!-- FOOTER SECTION -->
-<?php //include('footer.php'); ?>
+<?php include('footer.php'); ?>
 <!-- //END -->
 
 </body>
