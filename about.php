@@ -40,15 +40,17 @@
     <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="overflow: scroll; padding-top:25%">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-xs-12">
-                <center><p style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%;">Lorem ipsum dolor sit amet, mei fugit iudico everti ea, cu per errem suscipiantur, periculis intellegam omittantur has ei. Eum in wisi consul epicuri, eum in eros choro putent. Eu semper forensibus qui, ei quo magna solum. Vocent regione constituto cu vim. At facete partiendo comprehensam pro, nostrum concludaturque et usu.</p>
+                <center>
+                    <h2>ABOUT</h2>
+                    <p style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%;" align="justify">Lorem ipsum dolor sit amet, mei fugit iudico everti ea, cu per errem suscipiantur, periculis intellegam omittantur has ei. Eum in wisi consul epicuri, eum in eros choro putent. Eu semper forensibus qui, ei quo magna solum. Vocent regione constituto cu vim. At facete partiendo comprehensam pro, nostrum concludaturque et usu.</p>
 
-                    <p style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%;">Ea eum sanctus recusabo omittantur, facilisi tractatos nec in. Ex malorum pertinax intellegam qui. Est in semper praesent, vis vivendo gloriatur ne. Ne mea porro sententiae, brute partem accusata eu duo.</p>
+                    <p style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%;" align="justify">Ea eum sanctus recusabo omittantur, facilisi tractatos nec in. Ex malorum pertinax intellegam qui. Est in semper praesent, vis vivendo gloriatur ne. Ne mea porro sententiae, brute partem accusata eu duo.</p>
 
-                    <p style="margin-left: 5%; margin-right: 5%;">Animal appetere sed cu, his munere mentitum inimicus cu. Duis meliore rationibus sed te. Et cum adipisci sententiae assueverit, has ne harum complectitur. Wisi libris antiopam no eum, primis mollis sea ei. Vero assum possit ius at, eu vitae quidam ancillae vim. Oratio impetus assentior mel eu, magna justo quo ex.</p>
+                    <p style="margin-left: 5%; margin-right: 5%;" align="justify">Animal appetere sed cu, his munere mentitum inimicus cu. Duis meliore rationibus sed te. Et cum adipisci sententiae assueverit, has ne harum complectitur. Wisi libris antiopam no eum, primis mollis sea ei. Vero assum possit ius at, eu vitae quidam ancillae vim. Oratio impetus assentior mel eu, magna justo quo ex.</p>
 
-                    <p style="margin-left: 5%; margin-right: 5%;">Elit nonumy has ne, et eam facilis electram assueverit. An essent dissentiunt vix, mel cu senserit splendide. Nibh doctus nusquam ei per, nec melius alienum consequat eu, pro ne dicunt possim. Sit cu accusata incorrupte. Ad graece ponderum vel, ad dolorem blandit disputando pro, atqui reformidans ei sed. Has hinc facete appetere ea.
+                    <p style="margin-left: 5%; margin-right: 5%;" align="justify">Elit nonumy has ne, et eam facilis electram assueverit. An essent dissentiunt vix, mel cu senserit splendide. Nibh doctus nusquam ei per, nec melius alienum consequat eu, pro ne dicunt possim. Sit cu accusata incorrupte. Ad graece ponderum vel, ad dolorem blandit disputando pro, atqui reformidans ei sed. Has hinc facete appetere ea.
                     </p>
-                    <p style="margin-left: 5%; margin-right: 5%;">Quo id corpora dissentias, quando dicunt senserit nec ne. Ex quo mundi albucius, vix libris suavitate efficiantur no. Ullum velit tantas usu cu, clita hendrerit est te. Te qui veniam oblique docendi, postea recusabo ea sed, ad omnium eripuit vix.</p>
+                    <p style="margin-left: 5%; margin-right: 5%;" align="justify">Quo id corpora dissentias, quando dicunt senserit nec ne. Ex quo mundi albucius, vix libris suavitate efficiantur no. Ullum velit tantas usu cu, clita hendrerit est te. Te qui veniam oblique docendi, postea recusabo ea sed, ad omnium eripuit vix.</p>
 
                 </center>
             </div>
