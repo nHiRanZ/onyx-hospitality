@@ -474,10 +474,14 @@
 
         <script>
             $("form").submit(function () {
-                sessionStorage['submittedAnswers'] = JSON.stringify($(this).serializeArray());
-
-                window.location.replace("game-completion.php");
-                return false;
+                var answers = $(this).serializeArray();
+                if(answers.length < 4) {
+                    alert("Ooops! Looks like you missed a couple of Questions there!");
+                } else {
+                    sessionStorage['submittedAnswers'] = JSON.stringify($(this).serializeArray());
+                    window.location.replace("game-completion.php");
+                    return false;
+                }
             });
         </script>
 
