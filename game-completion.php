@@ -32,12 +32,11 @@
     </script>
 
 </head>
-
 <body style="height: 100%" onload="appendElements()">
 
 <div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
-        <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+        <span><a href="game.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
         <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" class="highlightlogo"></a>
     </div>
 
@@ -51,8 +50,8 @@
             <div class="col-sm-12 col-md-12 col-xs-12">
                 <center><p style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; margin-top: 5%;">You have
                         completed the game. Good Job!</p>
-                    <div class="col-sm-12 col-md-12 col-xs-12" style="background-color: #2c2e3c; margin-bottom: 5%;">
-                        <ol id="list-parent" class="w3-ul" style="color: white;font-family: 'Caviar-Dreams';">
+                    <div class="col-sm-12 col-md-12 col-xs-12" style="background-color: #2c2e3c; margin-bottom: 5%; align-content: center">
+                        <ol id="list-parent" class="w3-ul" style="color: white;font-family: 'Caviar-Dreams'; align-self: center">
                         </ol>
 
                     </div>
@@ -75,11 +74,10 @@
 
     </div>
 
-</div>
+    <!-- FOOTER SECTION -->
+    <?php include('footer.php'); ?>
+    <!-- //END -->
 
-<!-- FOOTER SECTION -->
-<?php include('footer.php'); ?>
-<!-- //END -->
 
 </body>
 
