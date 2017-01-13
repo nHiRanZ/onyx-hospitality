@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 12, 2017 at 11:38 PM
+-- Generation Time: Jan 13, 2017 at 01:25 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -75,6 +75,19 @@ CREATE TABLE `questions` (
   `ans3` varchar(15) NOT NULL,
   `ans4` varchar(15) NOT NULL,
   `final` int(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reservations`
+--
+
+CREATE TABLE `reservations` (
+  `pubID` int(5) NOT NULL,
+  `reserveID` int(7) NOT NULL,
+  `userID` int(5) NOT NULL,
+  `name` varchar(15) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
