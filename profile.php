@@ -86,21 +86,21 @@
 
 
                         </div>
-                        <script>
-                            function append() {
 
-
-//                                var one = JSON.parse(sessionStorage.getItem("submittedFav"));
-//
-//                                echo (one);
-                                document.getElementById("Tokyo").innerHTML = localStorage.getItem("favourite");
-                            }
-
-                        </script>
-
-                        <div id="Tokyo" class="w3-container city" style="display:none" >
+                        <div id="Tokyo" class="w3-container city" style="display:none">
                             <br>
                             <h3>You have added</h3>
+                        </div>
+                        <div>
+                            <script>
+                                function append() {
+
+
+
+                                    document.getElementById("Tokyo").innerHTML = JSON.parse(localStorage.getItem("favour"));
+                                }
+
+                            </script>
                         </div>
                     </div>
                 </div>

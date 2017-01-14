@@ -68,8 +68,12 @@
                     <script>
 
                         function fav() {
+                            var favour = [];
+                            favour = JSON.parse(localStorage.getItem("favour"));
+                            favour.push("SERENDIB BREWERS & CO");
+                            localStorage.setItem("favour", JSON.stringify(favour));
+    //                        localStorage.setItem("favourite2", "SERENDIB BREWERS & CO");
 
-                            localStorage.setItem("favourite", "SERENDIB BREWERS & CO");
                         }
 
                     </script>

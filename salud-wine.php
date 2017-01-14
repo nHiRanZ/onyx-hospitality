@@ -53,6 +53,29 @@
                     <h4>SALUD - WINE SPECIALIST</h4>
                     <p>10, Albert Cresent, Colombo 4</p>
                 </div>
+                <div>
+                    <form id="starForm">
+                        <a href="#" onclick="fav();">
+                            <fieldset class="rating" style="float: right">
+
+                                <input  type="radio"  id="star1" name="serendib" value="serendib" /><label class = "full"  title="fav"></label>
+
+
+                            </fieldset>
+                        </a>
+                    </form>
+                    <script>
+
+                        function fav() {
+                            var favour = [];
+                            favour = JSON.parse(localStorage.getItem("favour"));
+                            favour.push("SALUD - WINE SPECIALIST");
+                            localStorage.setItem("favour", JSON.stringify(favour));
+
+                        }
+
+                    </script>
+                </div>
                 <div class="col-sm-12 col-md-12 col-xs-12">
                     <div class="w3-container">
                         <div class="w3-row">

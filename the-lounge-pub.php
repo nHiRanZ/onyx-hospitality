@@ -69,8 +69,11 @@
                     <script>
 
                         function fav() {
+                            var favour = [];
+                            favour[0] = "THE LOUNGE - KAOKE & PUB";
+                            localStorage.setItem("favour", JSON.stringify(favour));
 
-                            localStorage.setItem("favourite", "THE LOUNGE - KAOKE & PUB");
+                        //   localStorage.setItem("favourite", "THE LOUNGE - KAOKE & PUB");
                         }
 
                     </script>
