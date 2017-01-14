@@ -373,12 +373,14 @@ and (max-device-width: 667px) {
         z-index: 1;
         /*margin-top: 5%;*/
         padding-right: 5%;
+        padding-top: 6px;
+
     }
 
     .highlightlogo {
         width: 80px;
         margin-left: 60%;
-        margin-top: -5%;
+        margin-top: -17%;
     }
 
 }
@@ -453,6 +455,7 @@ and (max-device-width: 1024px) {
         z-index: 1;
         margin-top: 5%;
         padding-right: 5%;
+        padding-top: 19px;
     }
 
     .highlightlogo {
@@ -580,7 +583,7 @@ and (max-device-width: 1024px) {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    padding-right: 25px;
+
 }
 
 .sidenav a {
