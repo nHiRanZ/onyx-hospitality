@@ -85,7 +85,7 @@
                 <div class="col-md-2 col-sm-0 col-xs-0"></div>
                 <div class="col-md-8 col-sm-12 col-xs-12">
                     <div class="form-group">
-                        <div class='input-group date' id='datetimepicker11'>
+                        <div class='input-group date' id='datetimepicker'>
                             <input type='text' class="form-control"/>
                             <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar">
@@ -95,7 +95,7 @@
                     </div>
                     <script type="text/javascript">
                         $(function () {
-                            $('#datetimepicker11').datetimepicker({
+                            $('#datetimepicker').datetimepicker({
                                 daysOfWeekDisabled: [0, 6]
                             });
                         });
@@ -104,6 +104,16 @@
                 <div class="col-md-2 col-sm-0 col-xs-0"></div>
             </div>
 
+            <div class="row">
+                <div class="col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="col-sm-7 col-md-7 col-xs-7">
+                <h4 style="float:right;margin-top: 20px">RESERVATION FEE ($) :</h4>
+            </div>
+            <div class="col-sm-3 col-md-3 col-xs-3">
+                <div id="total" style="font-size: 24px; font-weight: 600; margin-top: 10px; float:left;">10</div>
+            </div>
+                <div class="col-md-1 col-sm-1 col-xs-1"></div>
+            </div>
 
 
 
@@ -132,6 +142,10 @@
 
             }
 
+//            if (document.getElementById("total").innerHTML >= 500) {
+//                document.getElementById("total").innerHTML = 500;
+//            }
+            document.getElementById("total").innerHTML = 10 * (val*1+1);
             return b;
         });
 
@@ -141,14 +155,21 @@
         $('#output').html(function (i, val) {
             var a = val * 1 - 1;
 
-            if (a <= 1) {
+
+            if (a < 1) {
                 document.getElementById("subtract").style.color = "lightgray";
                 return 1;
             }
+//            document.getElementById("total").innerHTML = document.getElementById("total").innerHTML - 500 ;
+            document.getElementById("total").innerHTML = 10 * (val*1-1);
             return a;
         });
     });
+
+
 </script>
+
+
 
 <script type="text/javascript"
         src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">

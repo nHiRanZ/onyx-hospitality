@@ -365,7 +365,7 @@ and (max-device-width: 667px) {
     .highlight {
         background-color: rgba(0, 0, 0, 0.65);
         position: absolute;
-        height: 6%;
+        height: 7%;
         width: 100%;
         font-family: Verdana, Geneva, sans-serif;
         color: #FFF;
