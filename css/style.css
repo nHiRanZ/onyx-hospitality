@@ -365,7 +365,7 @@ and (max-device-width: 667px) {
     .highlight {
         background-color: rgba(0, 0, 0, 0.65);
         position: absolute;
-        height: 6%;
+        height: 8%;
         width: 100%;
         font-family: Verdana, Geneva, sans-serif;
         color: #FFF;
@@ -373,12 +373,13 @@ and (max-device-width: 667px) {
         z-index: 1;
         /*margin-top: 5%;*/
         padding-right: 5%;
+        padding-top: 14px;
     }
 
     .highlightlogo {
         width: 80px;
         margin-left: 60%;
-        margin-top: -5%;
+        margin-top: -17%;
     }
 
 }
@@ -453,6 +454,7 @@ and (max-device-width: 1024px) {
         z-index: 1;
         margin-top: 5%;
         padding-right: 5%;
+        padding-top: 17px;
     }
 
     .highlightlogo {
@@ -472,11 +474,6 @@ and (max-device-width: 1024px) {
         margin-top: 5%;
         padding-right: 5%;
     }
-
-    .pubsMargin {
-        margin-top:125px;
-    }
-
 
 }
 
@@ -554,6 +551,7 @@ and (max-device-width: 1024px) {
         z-index: 1;
         margin-top: 5%;
         padding-right: 5%;
+        padding-top: 17px;
     }
 
     .highlightlogo {
@@ -563,8 +561,36 @@ and (max-device-width: 1024px) {
 
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-.selected{
-    box-shadow:0px 3px 3px 1px #333;
-    border:solid 2px deepskyblue; margin:3px;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
