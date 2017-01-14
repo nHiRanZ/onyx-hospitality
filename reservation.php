@@ -13,10 +13,10 @@
 
     <?php include('head.php'); ?>
 
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+    <!--    <link rel="stylesheet" type="text/css" media="screen"-->
+    <!--          href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">-->
 
-
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 </head>
 
 <body style="height: 100%">
@@ -58,7 +58,7 @@
             </div>
 
             <div class="col-sm-12 col-md-12 col-xs-12">
-                <h4 style="float:left;margin-top: 20px">TABLE FOR :</h4>
+                <h4 style="float:left;margin-top: 30px">TABLE FOR :</h4>
             </div>
             <div class="row text-center" style="">
                 <center>
@@ -78,44 +78,68 @@
 
 
             <div class="col-sm-12 col-md-12 col-xs-12">
-                <h4 style="float:left;margin-top: 20px">CHOOSE DATE & TIME :</h4>
+                <h4 style="float:left;margin-top: 30px">CHOOSE DATE & TIME :</h4>
             </div>
-            <div class="row text-center" style="">
 
-                <div class="col-md-2 col-sm-0 col-xs-0"></div>
-                <div class="col-md-8 col-sm-12 col-xs-12">
+
+            <div class="row text-center" style="margin-top: 20px;">
+
+                <div class="col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-md-10 col-sm-10 col-xs-10">
                     <div class="form-group">
-                        <div class='input-group date' id='datetimepicker'>
-                            <input type='text' class="form-control"/>
-                            <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar">
-                    </span>
-                </span>
+                        <div class="input-group date form_datetime" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                            <input class="form-control" size="16" type="text" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
                         </div>
+                        <input type="hidden" id="dtp_input1" value=""/><br/>
                     </div>
-                    <script type="text/javascript">
-                        $(function () {
-                            $('#datetimepicker').datetimepicker({
-                                daysOfWeekDisabled: [0, 6]
-                            });
-                        });
-                    </script>
+<!--                    <script type="text/javascript">-->
+<!--                        $(function () {-->
+<!--                            $('#datetimepicker').datetimepicker({-->
+<!--                                daysOfWeekDisabled: [0, 6]-->
+<!--                            });-->
+<!--                        });-->
+<!--                    </script>-->
                 </div>
-                <div class="col-md-2 col-sm-0 col-xs-0"></div>
+                <div class="col-md-1 col-sm-1 col-xs-1"></div>
             </div>
+
+
+            <!--            <div class="col-md-2 col-sm-0 col-xs-0"></div>-->
+            <!--            <div class="col-md-8 col-sm-12 col-xs-12">-->
+            <!--            <div class="form-group">-->
+            <!--                <div class="input-group date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">-->
+            <!--                    <input class="form-control" size="16" type="text" value="" readonly>-->
+            <!--                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>-->
+            <!--                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>-->
+            <!--                </div>-->
+            <!--                <input type="hidden" id="dtp_input1" value="" /><br/>-->
+            <!--            </div>-->
+            <!---->
+            <!--                <div class="col-md-2 col-sm-0 col-xs-0"></div>-->
+
 
             <div class="row">
                 <div class="col-md-1 col-sm-1 col-xs-1"></div>
-            <div class="col-sm-7 col-md-7 col-xs-7">
-                <h4 style="float:right;margin-top: 20px">RESERVATION FEE ($) :</h4>
-            </div>
-            <div class="col-sm-3 col-md-3 col-xs-3">
-                <div id="total" style="font-size: 24px; font-weight: 600; margin-top: 10px; float:left;">10</div>
-            </div>
+                <div class="col-sm-7 col-md-7 col-xs-7">
+                    <h4 style="float:right;margin-top: 20px">RESERVATION FEE ($) :</h4>
+                </div>
+                <div class="col-sm-3 col-md-3 col-xs-3">
+                    <div id="total" style="font-size: 24px; font-weight: 600; margin-top: 10px; float:left;">10</div>
+                </div>
                 <div class="col-md-1 col-sm-1 col-xs-1"></div>
             </div>
 
-
+            <div class="row" style="margin-top: 30px">
+                <div class="col-md-3 col-sm-3 col-xs-3"></div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <a href="reservation.php">
+                        <div class="button-black">CONFIRM</div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3"></div>
+            </div>
 
 
         </div>
@@ -145,7 +169,7 @@
 //            if (document.getElementById("total").innerHTML >= 500) {
 //                document.getElementById("total").innerHTML = 500;
 //            }
-            document.getElementById("total").innerHTML = 10 * (val*1+1);
+            document.getElementById("total").innerHTML = 10 * (val * 1 + 1);
             return b;
         });
 
@@ -161,7 +185,7 @@
                 return 1;
             }
 //            document.getElementById("total").innerHTML = document.getElementById("total").innerHTML - 500 ;
-            document.getElementById("total").innerHTML = 10 * (val*1-1);
+            document.getElementById("total").innerHTML = 10 * (val * 1 - 1);
             return a;
         });
     });
@@ -170,11 +194,33 @@
 </script>
 
 
+<script type="text/javascript" src="js/jquery-3.1.1.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+<!--<script type="text/javascript" src="js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>-->
 
-<script type="text/javascript"
-        src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
 </script>
 
+<script>
+    function myFunction() {
+        var d = new Date();
+        var myDate = d.toISOString();
+        return myDate;
+//        document.getElementById("demo").innerHTML = n;
+        console.log('myDate');
+    }
+</script>
 
 
 <!-- //END -->
