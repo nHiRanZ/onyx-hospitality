@@ -13,6 +13,10 @@
 
     <?php include('head.php'); ?>
 
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
+
 </head>
 
 <body style="height: 100%">
@@ -31,10 +35,89 @@
     <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-xs-12">
+                <h4 style="float:left">SELECT PUB :</h4>
+            </div>
+            <div class="row text-center" style="">
+                <div class="col-md-1 col-xs-1 col-sm-1"></div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="img/pubs/bar-logo1.png" style="width: 100%">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="img/pubs/bar-logo2.png" style="width: 100%">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="img/pubs/bar-logo3.png" style="width: 100%">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="img/pubs/bar-logo4.png" style="width: 100%">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="img/pubs/bar-logo5.png" style="width: 100%">
+                </div>
+                <div class="col-md-1 col-xs-1 col-sm-1"></div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-xs-12">
+                <h4 style="float:left;margin-top: 20px">TABLE FOR :</h4>
+            </div>
+            <div class="row text-center" style="">
                 <center>
-                    <div class="jumbotron"><h4>coming soon</h4></div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"></div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <span><i id="subtract" class="fa fa-angle-left fa-3x" style="color:lightgray"></i></span>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <div id="output" style="font-size: 24px; font-weight: 600;">1</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <span><i id="add" class="fa fa-angle-right fa-3x" style="color: black"></i></span>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"></div>
                 </center>
             </div>
+
+
+            <div class="col-sm-12 col-md-12 col-xs-12">
+                <h4 style="float:left;margin-top: 20px">CHOOSE DATE & TIME :</h4>
+            </div>
+            <div class="row text-center" style="">
+
+                <div class="col-md-2 col-sm-0 col-xs-0"></div>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker'>
+                            <input type='text' class="form-control"/>
+                            <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar">
+                    </span>
+                </span>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker').datetimepicker({
+                                daysOfWeekDisabled: [0, 6]
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="col-md-2 col-sm-0 col-xs-0"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="col-sm-7 col-md-7 col-xs-7">
+                <h4 style="float:right;margin-top: 20px">RESERVATION FEE ($) :</h4>
+            </div>
+            <div class="col-sm-3 col-md-3 col-xs-3">
+                <div id="total" style="font-size: 24px; font-weight: 600; margin-top: 10px; float:left;">10</div>
+            </div>
+                <div class="col-md-1 col-sm-1 col-xs-1"></div>
+            </div>
+
+
+
+
         </div>
 
     </div>
@@ -43,6 +126,57 @@
 
 <!-- FOOTER SECTION -->
 <?php include('footer.php'); ?>
+
+<script>
+    $('img').click(function () {
+        $('.selected').removeClass('selected');
+        $(this).addClass('selected');
+    });
+
+    $('#add').click(function () {
+        $('#output').html(function (i, val) {
+            var b = val * 1 + 1;
+
+            if (b > 1) {
+                document.getElementById("subtract").style.color = "black";
+
+            }
+
+//            if (document.getElementById("total").innerHTML >= 500) {
+//                document.getElementById("total").innerHTML = 500;
+//            }
+            document.getElementById("total").innerHTML = 10 * (val*1+1);
+            return b;
+        });
+
+    });
+
+    $('#subtract').click(function () {
+        $('#output').html(function (i, val) {
+            var a = val * 1 - 1;
+
+
+            if (a < 1) {
+                document.getElementById("subtract").style.color = "lightgray";
+                return 1;
+            }
+//            document.getElementById("total").innerHTML = document.getElementById("total").innerHTML - 500 ;
+            document.getElementById("total").innerHTML = 10 * (val*1-1);
+            return a;
+        });
+    });
+
+
+</script>
+
+
+
+<script type="text/javascript"
+        src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+</script>
+
+
+
 <!-- //END -->
 
 </body>
