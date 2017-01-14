@@ -56,14 +56,14 @@
                 <div class="col-sm-12 col-md-12 col-xs-12">
                     <div class="w3-container">
                         <div class="w3-row">
-                            <a href="javascript:void(0)" onclick="openCity(event, 'London');" id="defaultclick">
+                            <a href="javascript:void(0)" onclick="openCity(event, 'London');" >
                                 <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">DETAILS</div>
                             </a>
                             <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
                                 <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">HISTORY
                                 </div>
                             </a>
-                            <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+                            <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');" id="defaultclick">
                                 <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">FAVOURITES</div>
                             </a>
                         </div>
