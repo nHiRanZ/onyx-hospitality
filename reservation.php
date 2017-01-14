@@ -13,6 +13,9 @@
 
     <?php include('head.php'); ?>
 
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
 
 </head>
 
@@ -146,6 +149,11 @@
         });
     });
 </script>
+
+<script type="text/javascript"
+        src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+</script>
+
 
 
 <!-- //END -->

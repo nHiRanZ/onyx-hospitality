@@ -365,7 +365,7 @@ and (max-device-width: 667px) {
     .highlight {
         background-color: rgba(0, 0, 0, 0.65);
         position: absolute;
-        height: 8%;
+        height: 6%;
         width: 100%;
         font-family: Verdana, Geneva, sans-serif;
         color: #FFF;
@@ -373,13 +373,12 @@ and (max-device-width: 667px) {
         z-index: 1;
         /*margin-top: 5%;*/
         padding-right: 5%;
-        padding-top: 14px;
     }
 
     .highlightlogo {
         width: 80px;
         margin-left: 60%;
-        margin-top: -17%;
+        margin-top: -5%;
     }
 
 }
@@ -454,7 +453,6 @@ and (max-device-width: 1024px) {
         z-index: 1;
         margin-top: 5%;
         padding-right: 5%;
-        padding-top: 17px;
     }
 
     .highlightlogo {
@@ -474,6 +472,11 @@ and (max-device-width: 1024px) {
         margin-top: 5%;
         padding-right: 5%;
     }
+
+    .pubsMargin {
+        margin-top:125px;
+    }
+
 
 }
 
@@ -551,7 +554,6 @@ and (max-device-width: 1024px) {
         z-index: 1;
         margin-top: 5%;
         padding-right: 5%;
-        padding-top: 17px;
     }
 
     .highlightlogo {
@@ -559,6 +561,12 @@ and (max-device-width: 1024px) {
         margin-left: 75%;
     }
 
+}
+
+
+.selected{
+    box-shadow:0px 3px 3px 1px #333;
+    border:solid 2px deepskyblue; margin:3px;
 }
 
 .sidenav {
