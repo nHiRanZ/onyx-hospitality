@@ -101,6 +101,7 @@ hr {
     overflow: hidden;
     height: 10%;
     width: 100%;
+    margin-bottom: 10%;
 }
 
 .page-image-area {
@@ -148,7 +149,7 @@ h6 a:hover {
 
 .button-section {
     margin-top: 2%;
-    margin-left: 15%;
+    margin-left: 8%;
 }
 
 .textbox {

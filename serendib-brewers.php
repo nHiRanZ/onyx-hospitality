@@ -104,7 +104,7 @@
                 <center>
                     <div class="col-sm-12 col-md-12 col-xs-12">
                         <div class="">
-                            <a href="index.php">
+                            <a href="reservation.php">
                                 <div class="button-black">MAKE RESERVATION</div>
                             </a>
                         </div>
