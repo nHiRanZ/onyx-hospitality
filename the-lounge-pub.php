@@ -53,6 +53,27 @@
                     <h4>THE LOUNGE - KARAOKE & PUB</h4>
                     <p>107, Marine Drive, Colombo 5</p>
                 </div>
+
+                <div>
+                    <form id="starForm">
+                        <a href="#" onclick="fav();">
+                            <fieldset class="rating" style="float: right">
+
+                                <input  type="radio"  id="star1" name="lounge" value="lounge" /><label class = "full"  title="fav"></label>
+
+
+                            </fieldset>
+                        </a>
+                    </form>
+                    <script>
+
+                        function fav() {
+
+                            localStorage.setItem("favourite", "THE LOUNGE - KAOKE & PUB");
+                        }
+
+                    </script>
+                </div>
                 <div class="col-sm-12 col-md-12 col-xs-12">
                     <div class="w3-container">
                         <div class="w3-row">

@@ -32,7 +32,7 @@
 
 </head>
 
-<body style="height: 100%" onload="defaultTab()">
+<body style="height: 100%" onload="defaultTab()" onclick="append()">
 
 <div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
@@ -86,13 +86,21 @@
 
 
                         </div>
+                        <script>
+                            function append() {
 
-                        <div id="Tokyo" class="w3-container city" style="display:none">
+
+//                                var one = JSON.parse(sessionStorage.getItem("submittedFav"));
+//
+//                                echo (one);
+                                document.getElementById("Tokyo").innerHTML = localStorage.getItem("favourite");
+                            }
+
+                        </script>
+
+                        <div id="Tokyo" class="w3-container city" style="display:none" >
                             <br>
                             <h3>You have added</h3>
-                            <h5>The bar code</h5>
-                            <h5>The lounge</h5>
-                            <h5>The bar code</h5>
                         </div>
                     </div>
                 </div>
