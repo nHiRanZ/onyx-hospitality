@@ -51,33 +51,34 @@
             <div class="col-sm-12 col-md-12 col-xs-12">
                 <center><img src="img/pubs/bar-logo4.png" style="width: 200px;" alt="Logo" class="pubsMargin"></center>
                 <div class="col-sm-12 col-md-12 col-xs-12" style="margin-left: 18px">
+                    <div>
+                        <form id="starForm">
+                            <a href="profile.php" onclick="fav();">
+                                <fieldset class="rating" style="float: right">
+
+                                    <input  type="radio"  id="star1" name="lounge" value="lounge" /><label class = "full"  title="fav"></label>
+
+
+                                </fieldset>
+                            </a>
+                        </form>
+                        <script>
+
+                            function fav() {
+                                var favour = [];
+                                favour[0] = "THE LOUNGE - KAOKE & PUB";
+                                localStorage.setItem("favour", JSON.stringify(favour));
+
+                                //   localStorage.setItem("favourite", "THE LOUNGE - KAOKE & PUB");
+                            }
+
+                        </script>
+                    </div>
                     <h4>THE LOUNGE - KARAOKE & PUB</h4>
                     <p>107, Marine Drive, Colombo 5</p>
                 </div>
 
-                <div>
-                    <form id="starForm">
-                        <a href="#" onclick="fav();">
-                            <fieldset class="rating" style="float: right">
 
-                                <input  type="radio"  id="star1" name="lounge" value="lounge" /><label class = "full"  title="fav"></label>
-
-
-                            </fieldset>
-                        </a>
-                    </form>
-                    <script>
-
-                        function fav() {
-                            var favour = [];
-                            favour[0] = "THE LOUNGE - KAOKE & PUB";
-                            localStorage.setItem("favour", JSON.stringify(favour));
-
-                        //   localStorage.setItem("favourite", "THE LOUNGE - KAOKE & PUB");
-                        }
-
-                    </script>
-                </div>
                 <div class="col-sm-12 col-md-12 col-xs-12">
                     <div class="w3-container">
                         <div class="w3-row">
