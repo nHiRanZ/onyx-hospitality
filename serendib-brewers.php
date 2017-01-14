@@ -6,6 +6,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/fav.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -52,6 +53,26 @@
                 <div class="col-sm-12 col-md-12 col-xs-12" style="margin-left: 18px">
                     <h4>SERENDIB BREWERS & CO</h4>
                     <p>105, Francis Place, Colombo 5</p>
+                </div>
+                <div>
+                    <form id="starForm">
+                        <a href="#" onclick="fav();">
+                            <fieldset class="rating" style="float: right">
+
+                                <input  type="radio"  id="star1" name="serendib" value="serendib" /><label class = "full"  title="fav"></label>
+
+
+                            </fieldset>
+                        </a>
+                    </form>
+                    <script>
+
+                        function fav() {
+
+                            localStorage.setItem("favourite", "SERENDIB BREWERS & CO");
+                        }
+
+                    </script>
                 </div>
                 <div class="col-sm-12 col-md-12 col-xs-12">
                     <div class="w3-container">
