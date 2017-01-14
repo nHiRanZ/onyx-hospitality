@@ -45,10 +45,10 @@
         <img src="img/pubs/pubs-background.jpg" style="">
     </div>
 
-    <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="">
+    <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="overflow: scroll">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-xs-12">
-                <center><img src="img/pubs/bar-logo2.png" style="width: 200px;" alt="Logo"></center>
+                <center><img src="img/pubs/bar-logo2.png" style="width: 200px;" alt="Logo" class="pubsMargin"></center>
                 <div class="col-sm-12 col-md-12 col-xs-12" style="margin-left: 18px">
                     <h4>THE BAR CODE</h4>
                     <p>89, Alexander Place, Colombo 07</p>
@@ -103,7 +103,7 @@
                 </div>
                 <center>
                     <div class="col-sm-12 col-md-12 col-xs-12">
-                        <div class="">
+                        <div class="" style="margin:20px 20px">
                             <a href="reservation.php">
                                 <div class="button-black">MAKE RESERVATION</div>
                             </a>
