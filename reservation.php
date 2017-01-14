@@ -31,9 +31,12 @@
     <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-xs-12">
-                <center>
-                    <div class="jumbotron"><h4>coming soon</h4></div>
-                </center>
+                <h3 style="float:left">Select Pub</h3>
+
+
+
+
+
             </div>
         </div>
 
