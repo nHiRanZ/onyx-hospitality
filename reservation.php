@@ -13,6 +13,7 @@
 
     <?php include('head.php'); ?>
 
+
 </head>
 
 <body style="height: 100%">
@@ -31,13 +32,79 @@
     <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-xs-12">
-                <h3 style="float:left">Select Pub</h3>
-
-
-
-
-
+                <h4 style="float:left">SELECT PUB :</h4>
             </div>
+            <div class="row text-center" style="">
+                <div class="col-md-1 col-xs-1 col-sm-1"></div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="img/pubs/bar-logo1.png" style="width: 100%">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="img/pubs/bar-logo2.png" style="width: 100%">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="img/pubs/bar-logo3.png" style="width: 100%">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="img/pubs/bar-logo4.png" style="width: 100%">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="img/pubs/bar-logo5.png" style="width: 100%">
+                </div>
+                <div class="col-md-1 col-xs-1 col-sm-1"></div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-xs-12">
+                <h4 style="float:left;margin-top: 20px">TABLE FOR :</h4>
+            </div>
+            <div class="row text-center" style="">
+                <center>
+                    <div class="col-md-3 col-sm-3 col-xs-3"></div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <span><i id="subtract" class="fa fa-angle-left fa-3x" style="color:lightgray"></i></span>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <div id="output" style="font-size: 24px; font-weight: 600;">1</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <span><i id="add" class="fa fa-angle-right fa-3x" style="color: black"></i></span>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"></div>
+                </center>
+            </div>
+
+
+            <div class="col-sm-12 col-md-12 col-xs-12">
+                <h4 style="float:left;margin-top: 20px">CHOOSE DATE & TIME :</h4>
+            </div>
+            <div class="row text-center" style="">
+
+                <div class="col-md-2 col-sm-0 col-xs-0"></div>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker11'>
+                            <input type='text' class="form-control"/>
+                            <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar">
+                    </span>
+                </span>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker11').datetimepicker({
+                                daysOfWeekDisabled: [0, 6]
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="col-md-2 col-sm-0 col-xs-0"></div>
+            </div>
+
+
+
+
+
         </div>
 
     </div>
@@ -46,6 +113,41 @@
 
 <!-- FOOTER SECTION -->
 <?php include('footer.php'); ?>
+
+<script>
+    $('img').click(function () {
+        $('.selected').removeClass('selected');
+        $(this).addClass('selected');
+    });
+
+    $('#add').click(function () {
+        $('#output').html(function (i, val) {
+            var b = val * 1 + 1;
+
+            if (b > 1) {
+                document.getElementById("subtract").style.color = "black";
+
+            }
+
+            return b;
+        });
+
+    });
+
+    $('#subtract').click(function () {
+        $('#output').html(function (i, val) {
+            var a = val * 1 - 1;
+
+            if (a <= 1) {
+                document.getElementById("subtract").style.color = "lightgray";
+                return 1;
+            }
+            return a;
+        });
+    });
+</script>
+
+
 <!-- //END -->
 
 </body>
