@@ -580,7 +580,7 @@ and (max-device-width: 1024px) {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    padding-right: 25px;
+    /*padding-right: 25px;*/
 }
 
 .sidenav a {
