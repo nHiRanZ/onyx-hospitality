@@ -79,7 +79,7 @@
 
                         </div>
 
-                        <div id="Paris" class="w3-container city" style="display:none" ">
+                        <div id="Paris" class="w3-container city" style="display:none;margin-top: 20px;" >
                             <br>
                             <p>Check-in history</p>
 
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <center>
-                    <div class="col-sm-12 col-md-12 col-xs-12">
+                    <div class="col-sm-12 col-md-12 col-xs-12" style="margin-top: 30px">
                         <div class="">
                             <a href="reservation.php">
                                 <div class="button-black">TREASURE HUNT</div>

@@ -38,7 +38,7 @@
                             <img src="img/pubs/bar-logo4.png" style="width: 100%">
                         </div>
                         <div class="col-sm-7 col-md-7 col-xs-7" style="margin-top: 2%">
-                            <h5>THE LOUNGE - KAROKE & PUB </h5>
+                            <h5>THE LOUNGE - KARAOKE & PUB </h5>
                             <h6>107, Marine Drive, Colombo 5</h6>
                         </div>
                         <div class="col-sm-2 col-md-2 col-xs-2">
@@ -50,7 +50,7 @@
                             <img src="img/pubs/bar-logo3.png" style="width: 100%">
                         </div>
                         <div class="col-sm-7 col-md-7 col-xs-7" style="margin-top: 2%">
-                            <h5>MISTY - THE COCKTAIL BAR </h5>
+                            <h5>MYSTY - THE COCKTAIL BAR </h5>
                             <h6>89, Alexander Place, colombo 8</h6>
                         </div>
                         <div class="col-sm-2 col-md-2 col-xs-2">

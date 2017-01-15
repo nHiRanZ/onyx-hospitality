@@ -217,13 +217,6 @@
 </script>
 
 <script>
-    function myFunction() {
-        var d = new Date();
-        var myDate = d.toISOString();
-        return myDate;
-//        document.getElementById("demo").innerHTML = n;
-        console.log('myDate');
-    }
 
     function submitButton(){
 
