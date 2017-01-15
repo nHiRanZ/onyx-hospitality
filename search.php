@@ -79,7 +79,7 @@
                             <h6>89, Alexander Place, colombo 8</h6>
                         </div>
                         <div class="col-sm-2 col-md-2 col-xs-2">
-                            <a class="arrow" href="misty-pub.php"><i class="fa fa-angle-right fa-3x"
+                            <a class="arrow" href="mysty-pub.php"><i class="fa fa-angle-right fa-3x"
                                                                      style="margin: 5px 15px; "></i></a></span>
                         </div>
                     </div>

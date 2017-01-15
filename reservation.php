@@ -19,11 +19,11 @@
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 </head>
 
-<body style="height: 100%">
+<body style="height: 100%" onload="">
 
 <div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
-        <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+        <span><a href="#" onclick="history.go(-1)"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
         <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" class="highlightlogo"></a>
     </div>
 
@@ -46,7 +46,7 @@
                     <img src="img/pubs/bar-logo2.png" style="width: 100%" id="barCode" value="The Bar Code">
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
-                    <img src="img/pubs/bar-logo3.png" style="width: 100%" id="Mysty" value="Mysty - Cocktail Bar">
+                    <img src="img/pubs/bar-logo3.png" style="width: 100%" id="mysty" value="Mysty - Cocktail Bar">
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <img src="img/pubs/bar-logo4.png" style="width: 100%" id="lounge" value="The Lounge - Karaoke & Pub">
@@ -257,6 +257,56 @@
 
 
 
+</script>
+
+<!--<script>-->
+<!--    function selectedImage() {-->
+<!--        console.log('got in');-->
+<!--        var pathname = window.location.pathname; // returns the full URL-->
+<!--        if(pathname.indexOf('mysty') > -1) {-->
+<!--            $('#mysty').addClass('selected');-->
+<!--            console.log('done');-->
+<!--        }-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--    }-->
+<!--</script>-->
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if(window.location.href.indexOf("mysty") > -1) {
+            $('.selected').removeClass('selected');
+            $('#mysty').addClass('selected');
+            console.log('found mysty');
+        }
+
+        if(window.location.href.indexOf("salud") > -1) {
+            $('.selected').removeClass('selected');
+            $('#salud').addClass('selected');
+            console.log('found salud');
+        }
+
+        if(window.location.href.indexOf("serendib") > -1) {
+            $('.selected').removeClass('selected');
+            $('#serendib').addClass('selected');
+            console.log('found serendib');
+        }
+
+        if(window.location.href.indexOf("barcode") > -1) {
+            $('.selected').removeClass('selected');
+            $('#barCode').addClass('selected');
+            console.log('found barcode');
+        }
+
+        if(window.location.href.indexOf("lounge") > -1) {
+            $('.selected').removeClass('selected');
+            $('#lounge').addClass('selected');
+            console.log('found lounge');
+        }
+    });
 </script>
 
 

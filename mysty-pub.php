@@ -74,7 +74,7 @@
 
                         </script>
                     </div>
-                    <h4>MISTY - THE COCKTAIL BAR</h4>
+                    <h4>MYSTY - THE COCKTAIL BAR</h4>
                     <p>89, Alexander Place, Colombo 8.</p>
                 </div>
 
@@ -129,7 +129,7 @@
                 <center>
                     <div class="col-sm-12 col-md-12 col-xs-12">
                         <div class="" style="margin:20px 20px">
-                            <a href="reservation.php">
+                            <a href="reservation.php?mysty">
                                 <div class="button-black">MAKE RESERVATION</div>
                             </a>
                         </div>
