@@ -51,32 +51,33 @@
             <div class="col-sm-12 col-md-12 col-xs-12">
                 <center><img src="img/pubs/bar-logo3.png" style="width: 200px;" alt="Logo" class="pubsMargin"></center>
                 <div class="col-sm-12 col-md-12 col-xs-12" style="margin-left: 18px">
+                    <div>
+                        <form id="starForm">
+                            <a href="profile.php" onclick="fav();">
+                                <fieldset class="rating" style="float: right">
+
+                                    <input  type="radio"  id="star1" name="serendib" value="serendib" /><label class = "full"  title="fav"></label>
+
+
+                                </fieldset>
+                            </a>
+                        </form>
+                        <script>
+
+                            function fav() {
+                                var favour = [];
+                                favour = JSON.parse(localStorage.getItem("favour"));
+                                favour.push("MISTY - THE COCKTAIL BAR");
+                                localStorage.setItem("favour", JSON.stringify(favour));
+
+                            }
+
+                        </script>
+                    </div>
                     <h4>MISTY - THE COCKTAIL BAR</h4>
                     <p>89, Alexander Place, Colombo 8.</p>
                 </div>
-                <div>
-                    <form id="starForm">
-                        <a href="#" onclick="fav();">
-                            <fieldset class="rating" style="float: right">
 
-                                <input  type="radio"  id="star1" name="serendib" value="serendib" /><label class = "full"  title="fav"></label>
-
-
-                            </fieldset>
-                        </a>
-                    </form>
-                    <script>
-
-                        function fav() {
-                            var favour = [];
-                            favour = JSON.parse(localStorage.getItem("favour"));
-                            favour.push("MISTY - THE COCKTAIL BAR");
-                            localStorage.setItem("favour", JSON.stringify(favour));
-
-                        }
-
-                    </script>
-                </div>
                 <div class="col-sm-12 col-md-12 col-xs-12">
                     <div class="w3-container">
                         <div class="w3-row">

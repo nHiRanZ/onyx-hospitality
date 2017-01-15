@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <link rel="stylesheet" type="text/css" href="css/fav.css">
+        <link rel="stylesheet" type="text/css" href="css/fav.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -51,33 +51,34 @@
             <div class="col-sm-12 col-md-12 col-xs-12">
                 <center><img src="img/pubs/bar-logo1.png" style="width: 200px;" alt="Logo" class="pubsMargin"></center>
                 <div class="col-sm-12 col-md-12 col-xs-12" style="margin-left: 18px">
+                    <div>
+                        <form id="starForm">
+                            <a href="profile.php" onclick="fav();">
+                                <fieldset class="rating" style="float: right">
+
+                                    <input  type="radio"  id="star1" name="serendib" value="serendib" /><label class = "full"  title="fav"></label>
+
+
+                                </fieldset>
+                            </a>
+                        </form>
+                        <script>
+
+                            function fav() {
+                                var favour = [];
+                                favour = JSON.parse(localStorage.getItem("favour"));
+                                favour.push("SERENDIB BREWERS & CO");
+                                localStorage.setItem("favour", JSON.stringify(favour));
+
+
+                            }
+
+                        </script>
+                    </div>
                     <h4>SERENDIB BREWERS & CO</h4>
                     <p>105, Francis Place, Colombo 5</p>
                 </div>
-                <div>
-                    <form id="starForm">
-                        <a href="#" onclick="fav();">
-                            <fieldset class="rating" style="float: right">
 
-                                <input  type="radio"  id="star1" name="serendib" value="serendib" /><label class = "full"  title="fav"></label>
-
-
-                            </fieldset>
-                        </a>
-                    </form>
-                    <script>
-
-                        function fav() {
-                            var favour = [];
-                            favour = JSON.parse(localStorage.getItem("favour"));
-                            favour.push("SERENDIB BREWERS & CO");
-                            localStorage.setItem("favour", JSON.stringify(favour));
-    //                        localStorage.setItem("favourite2", "SERENDIB BREWERS & CO");
-
-                        }
-
-                    </script>
-                </div>
                 <div class="col-sm-12 col-md-12 col-xs-12">
                     <div class="w3-container">
                         <div class="w3-row">
