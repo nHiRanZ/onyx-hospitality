@@ -208,8 +208,17 @@
         todayHighlight: 1,
         startView: 2,
         forceParse: 0,
-        showMeridian: 1
+        showMeridian: 1,
+        startDate: '+0d',
+        changeMonth: true
     });
+
+//    var date = new Date();
+//    date.setDate(date.getDate()-1);
+//
+//    $('.form_datetime').datetimepicker({
+//        startDate: date
+//    });
 </script>
 
 <script>
@@ -220,6 +229,8 @@
 //        document.getElementById("demo").innerHTML = n;
         console.log('myDate');
     }
+
+
 </script>
 
 
