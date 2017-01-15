@@ -51,31 +51,16 @@
             <div class="col-sm-12 col-md-12 col-xs-12">
                 <center><img src="img/pubs/bar-logo4.png" style="width: 200px;" alt="Logo" class="pubsMargin"></center>
                 <div class="col-sm-12 col-md-12 col-xs-12" style="margin-left: 18px">
-                    <div>
-                        <form id="starForm">
-                            <a href="profile.php" onclick="fav();">
-                                <fieldset class="rating" style="float: right">
 
-                                    <input  type="radio"  id="star1" name="lounge" value="lounge" /><label class = "full"  title="fav"></label>
-
-
-                                </fieldset>
-                            </a>
-                        </form>
-                        <script>
-
-                            function fav() {
-                                var favour = [];
-                                favour[0] = "THE LOUNGE - KAOKE & PUB";
-                                localStorage.setItem("favour", JSON.stringify(favour));
-
-                                //   localStorage.setItem("favourite", "THE LOUNGE - KAOKE & PUB");
-                            }
-
-                        </script>
+                    <div class="col-md-10 col-xs-10 col-sm-10">
+                        <h4>THE LOUNGE - KARAOKE & PUB </h4>
+                        <p>107, Marine Drive, Colombo 5</p>
                     </div>
-                    <h4>THE LOUNGE - KARAOKE & PUB</h4>
-                    <p>107, Marine Drive, Colombo 5</p>
+
+                    <div class="col-md-2 col-xs-2 col-sm-2">
+                        <div id="starLounge" class="glyphicon glyphicon-star-empty" style="float:right; margin-right:50px; top:10px;" onclick="starStatus()"></div>
+                    </div>
+                    
                 </div>
 
 
@@ -142,6 +127,31 @@
     </div>
 
 </div>
+
+<script>
+
+    function starStatus() {
+
+        console.log('function got called');
+
+        if(localStorage.getItem('starLounge') == 'true' || localStorage.getItem('starLounge') == '') {
+
+            localStorage.setItem('starLounge', 'false');
+            $('#starLounge').removeClass('glyphicon glyphicon-star');
+            $('#starLounge').addClass('glyphicon glyphicon-star-empty');
+
+        } else {
+            localStorage.setItem('starLounge', 'true');
+            $('#starLounge').removeClass('glyphicon glyphicon-star-empty');
+            $('#starLounge').addClass('glyphicon glyphicon-star');
+        }
+
+        console.log(localStorage.getItem('starLounge'));
+
+    }
+
+
+</script>
 
 <!-- FOOTER SECTION -->
 <?php include('footer.php'); ?>

@@ -51,31 +51,19 @@
             <div class="col-sm-12 col-md-12 col-xs-12">
                 <center><img src="img/pubs/bar-logo3.png" style="width: 200px;" alt="Logo" class="pubsMargin"></center>
                 <div class="col-sm-12 col-md-12 col-xs-12" style="margin-left: 18px">
-                    <div>
-                        <form id="starForm">
-                            <a href="profile.php" onclick="fav();">
-                                <fieldset class="rating" style="float: right">
-
-                                    <input  type="radio"  id="star1" name="serendib" value="serendib" /><label class = "full"  title="fav"></label>
 
 
-                                </fieldset>
-                            </a>
-                        </form>
-                        <script>
 
-                            function fav() {
-                                var favour = [];
-                                favour = JSON.parse(localStorage.getItem("favour"));
-                                favour.push("MISTY - THE COCKTAIL BAR");
-                                localStorage.setItem("favour", JSON.stringify(favour));
-
-                            }
-
-                        </script>
+                    <div class="col-md-10 col-xs-10 col-sm-10">
+                        <h4>MYSTY - THE COCKTAIL BAR</h4>
+                        <p>89, Alexander Place, Colombo 8.</p>
                     </div>
-                    <h4>MYSTY - THE COCKTAIL BAR</h4>
-                    <p>89, Alexander Place, Colombo 8.</p>
+
+                    <div class="col-md-2 col-xs-2 col-sm-2">
+                        <div id="starMysty" class="glyphicon glyphicon-star-empty" style="float:right; margin-right:50px; top:10px;" onclick="starStatus()"></div>
+                    </div>
+
+                    
                 </div>
 
                 <div class="col-sm-12 col-md-12 col-xs-12">
@@ -141,6 +129,31 @@
     </div>
 
 </div>
+
+<script>
+
+    function starStatus() {
+
+        console.log('function got called');
+
+        if(localStorage.getItem('starMysty') == 'true' || localStorage.getItem('starMysty') == '') {
+
+            localStorage.setItem('starMysty', 'false');
+            $('#starMysty').removeClass('glyphicon glyphicon-star');
+            $('#starMysty').addClass('glyphicon glyphicon-star-empty');
+
+        } else {
+            localStorage.setItem('starMysty', 'true');
+            $('#starMysty').removeClass('glyphicon glyphicon-star-empty');
+            $('#starMysty').addClass('glyphicon glyphicon-star');
+        }
+
+        console.log(localStorage.getItem('starMysty'));
+
+    }
+
+
+</script>
 
 <!-- FOOTER SECTION -->
 <?php include('footer.php'); ?>
