@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Game Introduction | ONYX Hospitality</title>
+    <title>User Profile | ONYX Hospitality</title>
     <script>
         function openCity(evt, cityName) {
             var i, x, tablinks;
@@ -23,9 +23,11 @@
             }
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.firstElementChild.className += " w3-border-black";
+            document.getElementById("Paris").innerHTML = JSON.parse(localStorage.getItem("reservation"));
         }
         function defaultTab() {
             document.getElementById('defaultclick').click();
+
         }
     </script>
     <?php include('head.php'); ?>
@@ -60,7 +62,7 @@
                                 <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">DETAILS</div>
                             </a>
                             <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
-                                <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">HISTORY
+                                <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">RESERVATIONS
                                 </div>
                             </a>
                             <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');" id="defaultclick">
@@ -77,12 +79,10 @@
 
                         </div>
 
-                        <div id="Paris" class="w3-container city" style="display:none">
+                        <div id="Paris" class="w3-container city" style="display:none" ">
                             <br>
                             <p>Check-in history</p>
-                            <h5>The bar code : 20/12/2016</h5>
-                            <h5>The lounge : 14/08/2016</h5>
-                            <h5>The bar code : 12/04/2016</h5>
+
 
 
                         </div>

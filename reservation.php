@@ -40,19 +40,19 @@
             <div class="row text-center" style="">
                 <div class="col-md-1 col-xs-1 col-sm-1"></div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
-                    <img src="img/pubs/bar-logo1.png" style="width: 100%">
+                    <img src="img/pubs/bar-logo1.png" style="width: 100%" id="serendib" value="Serendib Brewers & Co" class="selected">
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
-                    <img src="img/pubs/bar-logo2.png" style="width: 100%">
+                    <img src="img/pubs/bar-logo2.png" style="width: 100%" id="barCode" value="The Bar Code">
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
-                    <img src="img/pubs/bar-logo3.png" style="width: 100%">
+                    <img src="img/pubs/bar-logo3.png" style="width: 100%" id="Mysty" value="Mysty - Cocktail Bar">
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
-                    <img src="img/pubs/bar-logo4.png" style="width: 100%">
+                    <img src="img/pubs/bar-logo4.png" style="width: 100%" id="lounge" value="The Lounge - Karaoke & Pub">
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
-                    <img src="img/pubs/bar-logo5.png" style="width: 100%">
+                    <img src="img/pubs/bar-logo5.png" style="width: 100%" id="salud" value="Salud - Wine Specialist">
                 </div>
                 <div class="col-md-1 col-xs-1 col-sm-1"></div>
             </div>
@@ -88,7 +88,7 @@
                 <div class="col-md-10 col-sm-10 col-xs-10">
                     <div class="form-group">
                         <div class="input-group date form_datetime" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
-                            <input class="form-control" size="16" type="text" value="" readonly>
+                            <input class="form-control" size="16" type="text" value="" readonly id="dateTimeInput">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
                         </div>
@@ -134,8 +134,8 @@
             <div class="row" style="margin-top: 30px">
                 <div class="col-md-3 col-sm-3 col-xs-3"></div>
                 <div class="col-md-6 col-sm-6 col-xs-6">
-                    <a href="reservation.php">
-                        <div class="button-black">CONFIRM</div>
+                    <a href="#">
+                        <div class="button-black" onclick="submitButton()">CONFIRM</div>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-3"></div>
@@ -213,12 +213,7 @@
         changeMonth: true
     });
 
-//    var date = new Date();
-//    date.setDate(date.getDate()-1);
-//
-//    $('.form_datetime').datetimepicker({
-//        startDate: date
-//    });
+
 </script>
 
 <script>
@@ -229,6 +224,44 @@
 //        document.getElementById("demo").innerHTML = n;
         console.log('myDate');
     }
+
+    function submitButton(){
+
+        if ($(".selected")[0]) {
+            var imgID = $('.selected').attr("value");
+            console.log(imgID);
+        }
+
+
+        var noOfPeople = document.getElementById("output").innerHTML;
+        console.log(noOfPeople);
+
+        var dateTime = document.getElementById("dateTimeInput").value;
+        console.log(dateTime);
+
+        var fee = document.getElementById("total").innerHTML;
+        console.log(fee);
+
+
+        var test= [];
+        test[0] = ("Pub Name : "+imgID);
+        localStorage.setItem("reservation", JSON.stringify(test));
+
+
+
+        // Parse the serialized data back into an aray of objects
+        test1 = JSON.parse(localStorage.getItem('reservation'));
+
+        // Push the new data (whether it be an object or anything else) onto the array
+        test1.push('<br />' +"Table For : "+noOfPeople);
+        test1.push('<br />' +"Date & Time : " + dateTime);
+        test1.push('<br />' +" Amount : $"+fee);
+
+
+        // again put the new array into the local storage
+        localStorage.setItem("reservation", JSON.stringify(test1));
+    }
+
 
 
 </script>
