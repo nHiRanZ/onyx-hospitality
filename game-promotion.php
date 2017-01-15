@@ -13,6 +13,12 @@
 
     <?php include('head.php'); ?>
 
+    <style>
+        button.close {
+            color:white;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -28,12 +34,12 @@
         <img src="img/game/game-promo.jpg" style="">
     </div>
 
-    <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="">
+    <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="overflow: scroll;">
 
         <div class="col-sm-12 col-md-12 col-xs-12">
             <center>
                 <div class="row">
-                    <h3 style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%;">PLAY AND WIN!</h3>
+                    <h3 style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%;" class="pubsMargin">PLAY AND WIN!</h3>
                 </div>
 
                 <div class="row">
@@ -44,6 +50,42 @@
                 <div class="row">
                     <a href="index.php"><img src="img/pubs/bar-logo2.png" alt="Logo"
                                              style="width: 40%;"></a>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+
+                        <a href="#">
+                            <div class="button-white" data-toggle="modal" data-target="#myModal">HELP</div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content" style="background-color: #1d1e27">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title" style="color:white">Game Rules and Regulations</h4>
+                            </div>
+                            <div class="modal-body" style="color:white">
+                                <p>Some shit in the modal.</p>
+                                <ul style="list-style-type:disc;">
+                                    <li>Coffee</li>
+                                    <li>Tea</li>
+                                    <li>Milk</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
 
@@ -64,7 +106,7 @@
                 <div class="col-sm-12 col-md-12 col-xs-12">
 
                     <a href="http://eepurl.com/cxmkXv">
-                        <div class="button-white">GET NEWSLETTER</div>
+                        <div class="button-white" style="margin-bottom: 30px;">GET NEWSLETTER</div>
                     </a>
 
                 </div>
