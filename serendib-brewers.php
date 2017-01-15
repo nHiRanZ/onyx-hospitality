@@ -27,6 +27,16 @@
         }
         function defaultTab() {
             document.getElementById('defaultclick').click();
+
+            if(localStorage.getItem('starSerendib') == 'false' || localStorage.getItem('starSerendib') == '' || localStorage.getItem('starSerendib') == null) {
+                $('#starSerendib').removeClass('glyphicon glyphicon-star');
+                $('#starSerendib').addClass('glyphicon glyphicon-star-empty');
+
+            } else {
+                $('#starSerendib').removeClass('glyphicon glyphicon-star-empty');
+                $('#starSerendib').addClass('glyphicon glyphicon-star');
+            }
+            
         }
     </script>
     <?php include('head.php'); ?>

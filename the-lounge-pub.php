@@ -27,6 +27,16 @@
         }
         function defaultTab() {
             document.getElementById('defaultclick').click();
+
+            if(localStorage.getItem('starLounge') == 'false' || localStorage.getItem('starLounge') == '' || localStorage.getItem('starLounge') == null) {
+                $('#starLounge').removeClass('glyphicon glyphicon-star');
+                $('#starLounge').addClass('glyphicon glyphicon-star-empty');
+
+            } else {
+                $('#starLounge').removeClass('glyphicon glyphicon-star-empty');
+                $('#starLounge').addClass('glyphicon glyphicon-star');
+            }
+
         }
     </script>
     <?php include('head.php'); ?>
@@ -131,22 +141,22 @@
 <script>
 
     function starStatus() {
-
         console.log('function got called');
 
         if(localStorage.getItem('starLounge') == 'true' || localStorage.getItem('starLounge') == '') {
 
-            localStorage.setItem('starLounge', 'false');
+                localStorage.setItem('starLounge', 'false');
             $('#starLounge').removeClass('glyphicon glyphicon-star');
             $('#starLounge').addClass('glyphicon glyphicon-star-empty');
 
         } else {
-            localStorage.setItem('starLounge', 'true');
+                localStorage.setItem('starLounge', 'true');
             $('#starLounge').removeClass('glyphicon glyphicon-star-empty');
             $('#starLounge').addClass('glyphicon glyphicon-star');
         }
 
         console.log(localStorage.getItem('starLounge'));
+
 
     }
 

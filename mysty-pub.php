@@ -27,6 +27,16 @@
         }
         function defaultTab() {
             document.getElementById('defaultclick').click();
+
+            if(localStorage.getItem('starMysty') == 'false' || localStorage.getItem('starMysty') == '' || localStorage.getItem('starMysty') == null) {
+                $('#starMysty').removeClass('glyphicon glyphicon-star');
+                $('#starMysty').addClass('glyphicon glyphicon-star-empty');
+
+            } else {
+                $('#starMysty').removeClass('glyphicon glyphicon-star-empty');
+                $('#starMysty').addClass('glyphicon glyphicon-star');
+            }
+
         }
     </script>
     <?php include('head.php'); ?>

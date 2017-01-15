@@ -27,6 +27,15 @@
         }
         function defaultTab() {
             document.getElementById('defaultclick').click();
+
+            if(localStorage.getItem('starSalud') == 'false' || localStorage.getItem('starSalud') == '' || localStorage.getItem('starSalud') == null) {
+                $('#starSalud').removeClass('glyphicon glyphicon-star');
+                $('#starSalud').addClass('glyphicon glyphicon-star-empty');
+
+            } else {
+                $('#starSalud').removeClass('glyphicon glyphicon-star-empty');
+                $('#starSalud').addClass('glyphicon glyphicon-star');
+            }
         }
     </script>
     <?php include('head.php'); ?>

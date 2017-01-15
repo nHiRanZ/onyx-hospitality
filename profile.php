@@ -28,17 +28,102 @@
         function defaultTab() {
             document.getElementById('defaultclick').click();
 
+            var starBarCode = JSON.parse(localStorage.getItem("starBarCode"));
+            var starLounge = JSON.parse(localStorage.getItem("starLounge"));
+            var starMysty = JSON.parse(localStorage.getItem("starMysty"));
+            var starSerendib = JSON.parse(localStorage.getItem("starSerendib"));
+            var starSalud = JSON.parse(localStorage.getItem("starSalud"));
+
+            var element = document.getElementById("list-parent");
+
+
+            if (starBarCode == true) {
+                console.log('starBarCode true');
+
+                var para = document.createElement("li");
+                var node = document.createTextNode('THE BAR CODE');
+                para.appendChild(node);
+
+                element.appendChild(para);
+
+            }
+
+            else {
+                console.log('starBarCode false');
+            }
+
+            if (starLounge == true) {
+                console.log('starLounge true');
+
+                var para1 = document.createElement("li");
+                var node1 = document.createTextNode('THE LOUNGE - KARAOKE & PUB');
+                para1.appendChild(node1);
+
+                element.appendChild(para1);
+
+            }
+
+            else {
+                console.log('starLounge false');
+            }
+
+            if (starMysty == true) {
+                console.log('starMysty true');
+
+                var para2 = document.createElement("li");
+                var node2 = document.createTextNode('MYSTY - THE COCKTAIL BAR');
+                para2.appendChild(node2);
+
+                element.appendChild(para2);
+
+            }
+
+            else {
+                console.log('starMysty false');
+            }
+
+            if (starSerendib == true) {
+                console.log('starSerendib true');
+
+                var para3 = document.createElement("li");
+                var node3 = document.createTextNode('SERENDIB BREWERS & CO');
+                para3.appendChild(node3);
+
+                element.appendChild(para3);
+
+            }
+
+            else {
+                console.log('starSerendib false');
+            }
+
+            if (starSalud == true) {
+                console.log('starSalud true');
+
+                var para4 = document.createElement("li");
+                var node4 = document.createTextNode('SALUD - WINE SPECIALIST');
+                para4.appendChild(node4);
+
+                element.appendChild(para4);
+
+            }
+
+            else {
+                console.log('starSalud false');
+            }
+
         }
     </script>
     <?php include('head.php'); ?>
 
 </head>
 
-<body style="height: 100%" onload="defaultTab()" onclick="append()">
+<body style="height: 100%" onload="defaultTab()">
 
 <div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
-        <span><a href="index.php" onclick="history.go(-1)"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+        <span><a href="index.php" onclick="history.go(-1)"><i class="fa fa-angle-left fa-3x"
+                                                              style="margin: 15px 15px; "></i></a></span>
         <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" class="highlightlogo"></a>
     </div>
 
@@ -58,15 +143,16 @@
                 <div class="col-sm-12 col-md-12 col-xs-12">
                     <div class="w3-container">
                         <div class="w3-row">
-                            <a href="javascript:void(0)" onclick="openCity(event, 'London');" >
+                            <a href="javascript:void(0)" onclick="openCity(event, 'London');" id="defaultclick">
                                 <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">DETAILS</div>
                             </a>
                             <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
                                 <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">RESERVATIONS
                                 </div>
                             </a>
-                            <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');" id="defaultclick">
-                                <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">FAVOURITES</div>
+                            <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');" >
+                                <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">FAVOURITES
+                                </div>
                             </a>
                         </div>
 
@@ -79,29 +165,22 @@
 
                         </div>
 
-                        <div id="Paris" class="w3-container city" style="display:none;margin-top: 20px;" >
+                        <div id="Paris" class="w3-container city" style="display:none;margin-top: 20px;">
                             <br>
-                            <p>Check-in history</p>
-
+                            <!--                            <p>Check-in history</p>-->
 
 
                         </div>
 
-                        <div id="Tokyo" class="w3-container city" style="display:none">
+                        <div id="Tokyo" class="w3-container city" style="display:none" onclick="appendElements()">
                             <br>
-                            <h3>You have added</h3>
+
+                            <ol id="list-parent" class="w3-ul"
+                                style="color: black;font-family: 'Caviar-Dreams'; align-self: center">
+                            </ol>
+
                         </div>
-                        <div>
-                            <script>
-                                function append() {
 
-
-
-                                    document.getElementById("Tokyo").innerHTML = JSON.parse(localStorage.getItem("favour"));
-                                }
-
-                            </script>
-                        </div>
                     </div>
                 </div>
                 <center>
@@ -118,11 +197,18 @@
 
     </div>
 
-</div>
 
-<!-- FOOTER SECTION -->
-<?php include('footer.php'); ?>
-<!-- //END -->
+    <script>
+        function appendElements() {
+//            var listStars = document.getElementById("list-parent);
+
+
+        }
+    </script>
+
+    <!-- FOOTER SECTION -->
+    <?php include('footer.php'); ?>
+    <!-- //END -->
 
 </body>
 
