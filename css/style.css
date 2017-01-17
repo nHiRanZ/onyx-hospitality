@@ -107,8 +107,7 @@ hr {
 .page-image-area {
     position: fixed;
     height: 80%;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 30%;
     overflow: hidden;
     width: 45%;
 }
@@ -380,7 +379,20 @@ and (max-device-width: 667px) {
         width: 80px;
         margin-left: 55%;
     }
+    .page-image-area {
+        position: fixed;
+        height: 60%;
 
+
+        width: 100%;
+    }
+    .map-container{
+        z-index: 2;
+        margin-top: 40%;
+    }
+    .game-container{
+        margin-top: 83%
+    }
 }
 
 /* Media Query for iPads */
@@ -478,8 +490,12 @@ and (max-device-width: 1024px) {
         margin-top:125px;
     }
 
+    .map-container{
 
+    }
 }
+
+
 
 
 /* Media Query for Macs */
