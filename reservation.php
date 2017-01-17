@@ -42,15 +42,16 @@
     </div>
 
     <div class="col-md-6 col-sm-6 col-xs-12 containertext center">
-        <div class="row"  style="margin-left: 10px;">
-            <div class="col-sm-12 col-md-12 col-xs-12" >
+        <div class="row" style="margin-left: 10px;">
+            <div class="col-sm-12 col-md-12 col-xs-12">
                 <br><br>
                 <h4 style="float:left">SELECT PUB :</h4>
             </div>
             <div class="row text-center" style="margin-top: 0px">
                 <div class="col-md-1 col-xs-1 col-sm-1"></div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
-                    <img src="img/pubs/bar-logo1.png" style="width: 100%" id="serendib" value="Serendib Brewers & Co" class="selected">
+                    <img src="img/pubs/bar-logo1.png" style="width: 100%" id="serendib" value="Serendib Brewers & Co"
+                         class="selected">
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <img src="img/pubs/bar-logo2.png" style="width: 100%" id="barCode" value="The Bar Code">
@@ -59,7 +60,8 @@
                     <img src="img/pubs/bar-logo3.png" style="width: 100%" id="mysty" value="Mysty - Cocktail Bar">
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
-                    <img src="img/pubs/bar-logo4.png" style="width: 100%" id="lounge" value="The Lounge - Karaoke & Pub">
+                    <img src="img/pubs/bar-logo4.png" style="width: 100%" id="lounge"
+                         value="The Lounge - Karaoke & Pub">
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <img src="img/pubs/bar-logo5.png" style="width: 100%" id="salud" value="Salud - Wine Specialist">
@@ -97,7 +99,8 @@
                 <div class="col-md-1 col-sm-1 col-xs-1"></div>
                 <div class="col-md-10 col-sm-10 col-xs-10">
                     <div class="form-group">
-                        <div class="input-group date form_datetime" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                        <div class="input-group date form_datetime" data-date-format="dd MM yyyy - HH:ii p"
+                             data-link-field="dtp_input1">
                             <input class="form-control" size="16" type="text" value="" readonly id="dateTimeInput">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
@@ -114,7 +117,7 @@
                     <h4 style="float:right;margin-top: 20px">RESERVATION FEE ($) :</h4>
                 </div>
                 <div class="col-sm-3 col-md-3 col-xs-3">
-                    <div id="total" style="font-size: 24px; font-weight: 600; margin-top: 10px; float:left;">10</div>
+                    <div id="total" name="total" style="font-size: 24px; font-weight: 600; margin-top: 10px; float:left;">10</div>
                 </div>
                 <div class="col-md-1 col-sm-1 col-xs-1"></div>
             </div>
@@ -123,11 +126,27 @@
                 <div class="col-md-3 col-sm-3 col-xs-3"></div>
                 <div class="col-md-6 col-sm-6 col-xs-6">
                     <a href="#">
-                        <div class="button-black" onclick="submitButton()">CONFIRM</div>
+                        <div class="button-black" onclick="submitButton()" id="btnConfirm">CONFIRM</div>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-3"></div>
             </div>
+
+
+
+<!--            <form action="profile.php" method="POST">-->
+<!--                <script-->
+<!--                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"-->
+<!--                        data-key="pk_test_9lad972D8FQdWYQrC80l3Jco"-->
+<!--                        data-amount="999"-->
+<!--                        data-name="Demo Site"-->
+<!--                        data-description="Widget"-->
+<!--                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"-->
+<!--                        data-locale="auto">-->
+<!--                </script>-->
+<!--            </form>-->
+
+
 
 
         </div>
@@ -182,7 +201,7 @@
 </script>
 
 
-<script type="text/javascript" src="js/jquery-3.1.1.min.js" charset="UTF-8"></script>
+<!--<script type="text/javascript" src="js/jquery-3.1.1.min.js" charset="UTF-8"></script>-->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
 <!--<script type="text/javascript" src="js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>-->
@@ -206,7 +225,7 @@
 
 <script>
 
-    function submitButton(){
+    function submitButton() {
 
         if ($(".selected")[0]) {
             var imgID = $('.selected').attr("value");
@@ -224,58 +243,76 @@
         console.log(fee);
 
 
-        var test= [];
-        test[0] = ("Pub Name : "+imgID);
+        var test = [];
+        test[0] = ("Pub Name : " + imgID);
         localStorage.setItem("reservation", JSON.stringify(test));
-
 
 
         // Parse the serialized data back into an aray of objects
         test1 = JSON.parse(localStorage.getItem('reservation'));
 
         // Push the new data (whether it be an object or anything else) onto the array
-        test1.push('<br />' +"Table For : "+noOfPeople);
-        test1.push('<br />' +"Date & Time : " + dateTime);
-        test1.push('<br />' +" Amount : $"+fee);
+        test1.push('<br />' + "Table For : " + noOfPeople);
+        test1.push('<br />' + "Date & Time : " + dateTime);
+        test1.push('<br />' + " Amount : $" + fee);
 
 
         // again put the new array into the local storage
         localStorage.setItem("reservation", JSON.stringify(test1));
-    }
 
+//        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+//        data-key="pk_test_9lad972D8FQdWYQrC80l3Jco"
+//        data-amount="999"
+//        data-name="Demo Site"
+//        data-description="Widget"
+//        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+//        data-locale="auto">
+
+
+
+    }
 
 
 </script>
 
+<script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_9lad972D8FQdWYQrC80l3Jco"
+        data-amount="999"
+        data-name="ONYX Hospitality"
+        data-description="Widget"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto">
+</script>
 
 
 <script type="text/javascript">
     $(document).ready(function () {
-        if(window.location.href.indexOf("mysty") > -1) {
+        if (window.location.href.indexOf("mysty") > -1) {
             $('.selected').removeClass('selected');
             $('#mysty').addClass('selected');
             console.log('found mysty');
         }
 
-        if(window.location.href.indexOf("salud") > -1) {
+        if (window.location.href.indexOf("salud") > -1) {
             $('.selected').removeClass('selected');
             $('#salud').addClass('selected');
             console.log('found salud');
         }
 
-        if(window.location.href.indexOf("serendib") > -1) {
+        if (window.location.href.indexOf("serendib") > -1) {
             $('.selected').removeClass('selected');
             $('#serendib').addClass('selected');
             console.log('found serendib');
         }
 
-        if(window.location.href.indexOf("barcode") > -1) {
+        if (window.location.href.indexOf("barcode") > -1) {
             $('.selected').removeClass('selected');
             $('#barCode').addClass('selected');
             console.log('found barcode');
         }
 
-        if(window.location.href.indexOf("lounge") > -1) {
+        if (window.location.href.indexOf("lounge") > -1) {
             $('.selected').removeClass('selected');
             $('#lounge').addClass('selected');
             console.log('found lounge');
@@ -283,9 +320,49 @@
     });
 </script>
 
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script>
 
 
 
-</body>
+//    for(var i in localStorage) {
+//        console.log(i + ' = ' + localStorage[i]);
+//    }
+
+var handler = StripeCheckout.configure({
+    key: 'pk_test_9lad972D8FQdWYQrC80l3Jco',
+    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+    token: function (token) {
+        $("#amount").val($("#amount").val() * 100);
+        $("#").submit();
+    }
+});
+
+$('#btnConfirm').on('click', function (e) {
+    var totalVal = document.getElementById("total").innerHTML;
+
+    var amount = parseInt(totalVal) * 100;
+
+    console.log('amount ' + amount);
+//    var displayAmount = parseFloat(Math.floor($("#amount").val() * 100) / 100).toFixed(2);
+    // Open Checkout with further options
+    handler.open({
+        name: 'Demo Site',
+        description: 'ONYX Hospitality',
+        amount: amount
+    });
+    e.preventDefault();
+});
+
+// Close Checkout on page navigation
+$(window).on('popstate', function () {
+    handler.close();
+});
+
+
+</script>
+
+
+    </body>
 
 </html>
