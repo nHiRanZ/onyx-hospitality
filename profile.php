@@ -1,5 +1,45 @@
 <?php session_start(); ?>
 
+<?php
+if (isset($_POST['submit'])) {
+
+    $message =
+        'Full Name:	' . $_POST['fullname'] . '<br />
+Email:	' . $_POST['emailid'] . '<br />
+Your Favourited Places:	' . $_POST['content'] . '<br />
+';
+    require "phpmailer/class.phpmailer.php"; //include phpmailer class
+
+    // Instantiate Class
+    $mail = new PHPMailer();
+
+    // Set up SMTP
+    $mail->IsSMTP();                // Sets up a SMTP connection
+    $mail->SMTPAuth = true;         // Connection with the SMTP does require authorization
+    $mail->SMTPSecure = "tls";      // Connect using a TLS connection
+    $mail->Host = "smtp.gmail.com";  //Gmail SMTP server address
+    $mail->Port = 587;  //Gmail SMTP port
+    $mail->Encoding = '7bit';
+
+    // Authentication
+    $mail->Username = "hospitalityonyx@gmail.com"; // Your full Gmail address
+    $mail->Password = "123mailonyx"; // Your Gmail password
+
+    // Compose
+    $mail->SetFrom("hospitalityonyx@gmail.com", "ONYX Hospitality");
+    //$mail->AddReplyTo($_POST['emailid'], $_POST['fullname']);
+    $mail->Subject = "Favourites List from ONYX Hospitality";      // Subject (which isn't required)
+    $mail->MsgHTML($message);
+
+    // Send To
+    $mail->AddAddress($_POST['emailid'], $_POST['fullname']); // Where to send it - Recipient
+    $result = $mail->Send();        // Send!
+    $message = $result ? 'Successfully Sent!' : 'Sending Failed!';
+    unset($mail);
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +50,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>User Profile | ONYX Hospitality</title>
+    <style>
+        input, select, textarea{
+            color: #000000;
+        }
+
+        textarea:focus, input:focus {
+            color: #000000;
+        }
+    </style>
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "350px";
@@ -43,6 +92,7 @@
 
             var element = document.getElementById("list-parent");
 
+            var contentText = [];
 
             if (starBarCode == true) {
                 console.log('starBarCode true');
@@ -53,6 +103,7 @@
 
                 element.appendChild(para);
 
+                contentText.push('THE BAR CODE');
             }
 
             else {
@@ -67,7 +118,7 @@
                 para1.appendChild(node1);
 
                 element.appendChild(para1);
-
+                contentText.push('THE LOUNGE - KARAOKE & PUB');
             }
 
             else {
@@ -82,7 +133,7 @@
                 para2.appendChild(node2);
 
                 element.appendChild(para2);
-
+                contentText.push('MYSTY - THE COCKTAIL BAR');
             }
 
             else {
@@ -97,7 +148,7 @@
                 para3.appendChild(node3);
 
                 element.appendChild(para3);
-
+                contentText.push('SERENDIB BREWERS & CO');
             }
 
             else {
@@ -112,13 +163,15 @@
                 para4.appendChild(node4);
 
                 element.appendChild(para4);
-
+                contentText.push('SALUD - WINE SPECIALIST');
             }
 
             else {
                 console.log('starSalud false');
             }
 
+            var content = document.getElementById("content");
+            content.value = contentText.toString();
         }
     </script>
     <?php include('head.php'); ?>
@@ -159,7 +212,7 @@
                                 <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">RESERVATIONS
                                 </div>
                             </a>
-                            <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');" >
+                            <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
                                 <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">FAVOURITES
                                 </div>
                             </a>
@@ -224,9 +277,24 @@
                         <h4 class="modal-title" style="color:white">Mail My Favourites</h4>
                     </div>
                     <div class="modal-body" style="color:white">
-                        <p>Please Enter Your Email to Send the Favourites List</p>
+                        <p>Please Enter Your Name and Email to Send the Favourites List</p>
                         <div>
-                            
+                            <form name="form1" id="form1" action="" method="post">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label for="email">Your Name:</label>
+                                        <input type="text" name="fullname" placeholder="Full Name"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Your Email:</label>
+                                        <input type="text" name="emailid" placeholder="Email"/>
+                                    </div>
+                                    <input type="hidden" name="content" id="content"/>
+                                    <br/>
+                                    <input type="submit" class="btn btn-default" name="submit" value="Send"/>
+                                </fieldset>
+                            </form>
+                            <p><?php if (!empty($message)) echo $message; ?></p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -250,8 +318,8 @@
 
     <!-- FOOTER SECTION -->
     <center>
-    <?php include('footer.php'); ?>
-    <!-- //END -->
+        <?php include('footer.php'); ?>
+        <!-- //END -->
     </center>
 </body>
 
