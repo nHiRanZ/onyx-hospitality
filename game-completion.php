@@ -14,6 +14,13 @@
     <?php include('head.php'); ?>
 
     <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
         function appendElements() {
             var listElementOne = document.getElementById("list-element-one");
             var one = JSON.parse(sessionStorage.getItem("submittedAnswers"));
@@ -36,13 +43,16 @@
 
 <div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
-        <span><a href="game.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+        <span style="font-size:30px;cursor:pointer;margin: 15px 22px;" onclick="openNav()">&#9776;</span>
         <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" class="highlightlogo"></a>
     </div>
 
     <div class="col-md-6 col-sm-6 col-xs-12 fill" style="float:left; background-color: blue; padding:0px 0px;">
 
         <img src="img/game/game-completion.jpg" style="">
+        <?php
+        include('side-nav.php');
+        ?>
     </div>
 
     <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="">
@@ -50,10 +60,12 @@
             <div class="col-sm-12 col-md-12 col-xs-12">
                 <center><p style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; margin-top: 5%;">You have
                         completed the game. Good Job!</p>
-                    <div class="col-sm-12 col-md-12 col-xs-12" style="background-color: #2c2e3c; margin-bottom: 5%; align-content: center">
-                        <ol id="list-parent" class="w3-ul" style="color: white;font-family: 'Caviar-Dreams'; align-self: center">
+                    <div class="col-sm-12 col-md-12 col-xs-12"
+                         style="background-color: #2c2e3c; margin-bottom: 5%; align-content: left">
+                        <ol id="list-parent" class="w3-ul"
+                            style="color: white;font-family: 'Caviar-Dreams'; align-self: center">
                         </ol>
-
+                        <div class="well" style="    margin-top: 10px;margin-left: 207px;margin-bottom: 10px;font-size: 40px;width: auto;height: 68px;color: #2c2e3c;"></div>
                     </div>
                     <p style="margin-left: 5%; margin-right: 5%; margin-top: 5%;">You're eligible for the competition!
                         The winners of this competition will be notified through email. we are rooting for you</p>
