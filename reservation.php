@@ -331,10 +331,11 @@
 
 var handler = StripeCheckout.configure({
     key: 'pk_test_9lad972D8FQdWYQrC80l3Jco',
-    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+    image: 'img/logo/logo-full.png',
     token: function (token) {
         $("#amount").val($("#amount").val() * 100);
-        $("#").submit();
+        //$("#").submit();
+        window.location = "http://localhost/onyx-hospitality/profile.php";
     }
 });
 
@@ -347,8 +348,8 @@ $('#btnConfirm').on('click', function (e) {
 //    var displayAmount = parseFloat(Math.floor($("#amount").val() * 100) / 100).toFixed(2);
     // Open Checkout with further options
     handler.open({
-        name: 'Demo Site',
-        description: 'ONYX Hospitality',
+        name: 'ONYX Hospitality',
+        description: 'Reservation Checkout',
         amount: amount
     });
     e.preventDefault();
