@@ -283,21 +283,21 @@ Your Favourited Places:	' . $_POST['content'] . '<br />
                                 <fieldset>
                                     <div class="form-group">
                                         <label for="email">Your Name: </label>
-                                        <input type="text" name="fullname" placeholder="Full Name"/>
+                                        <input type="text" name="fullname" placeholder="Full Name" style="width: 70%"/>
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Your Email:&nbsp</label>
-                                        <input type="text" name="emailid" placeholder="Email"/>
+                                        <input type="text" name="emailid" placeholder="Email" style="width: 70%"/>
                                     </div>
                                     <input type="hidden" name="content" id="content"/>
                                     <br/>
-                                    <input type="submit" class="btn btn-default" name="submit" value="Send"/>
+                                    <input type="submit" class="btn btn-default" name="submit" value="Send" />
                                 </fieldset>
                             </form>
                             <p><?php if (!empty($message)) echo $message; ?></p>
                         </div>
                     </div>
-                   
+
                 </div>
 
             </div>
