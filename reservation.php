@@ -335,7 +335,7 @@ var handler = StripeCheckout.configure({
     token: function (token) {
         $("#amount").val($("#amount").val() * 100);
         //$("#").submit();
-        window.location = "http://localhost/onyx-hospitality/profile.php";
+        window.location = "profile.php";
     }
 });
 
