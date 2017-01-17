@@ -179,6 +179,16 @@
                                 style="color: black;font-family: 'Caviar-Dreams'; align-self: center">
                             </ol>
 
+                            <center>
+                                <div class="col-sm-12 col-md-12 col-xs-12" style="margin-top: 30px">
+                                    <div class="">
+                                        <a href="reservation.php">
+                                            <div class="button-black">MAIL MY FAVOURITES</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </center>
+
                         </div>
 
                     </div>
