@@ -12,7 +12,15 @@
     <title>Game Promotion | ONYX Hospitality</title>
 
     <?php include('head.php'); ?>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
 
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
     <style>
         button.close {
             color:white;
@@ -25,13 +33,16 @@
 
 <div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
-        <span><a href="index.php"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+        <span style="font-size:30px;cursor:pointer;margin: 15px 22px;" onclick="openNav()">&#9776;</span>
         <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" class="highlightlogo"></a>
     </div>
 
     <div class="col-md-6 col-sm-6 col-xs-12 fill" style="float:left; background-color: #2c2e3c; padding:0px 0px;">
 
         <img src="img/game/game-promo.jpg" style="">
+        <?php
+        include('side-nav.php');
+        ?>
     </div>
 
     <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="overflow: scroll;">
@@ -73,11 +84,15 @@
                                 <h4 class="modal-title" style="color:white">Game Rules and Regulations</h4>
                             </div>
                             <div class="modal-body" style="color:white">
-                                <p>Some shit in the modal.</p>
-                                <ul style="list-style-type:disc;">
-                                    <li>Coffee</li>
-                                    <li>Tea</li>
-                                    <li>Milk</li>
+                                <p>You simply have to answer the questions within a given time period! </p>
+                                <ul>
+                                    <li>Additional information can be found by visiting the locations </li>
+                                    <li>Directions to the location are provided</li>
+                                    <li>Each correct answer carries 100 pints which can be redeemed at any of our outlets </li>
+                                    <li>
+                                    </li>
+                                    <br>
+                                    <p>May all odds be in your favour! </p>
                                 </ul>
                             </div>
                             <div class="modal-footer">
