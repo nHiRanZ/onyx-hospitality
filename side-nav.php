@@ -6,6 +6,7 @@
                                              style="width: 146px;height: 60px;margin: 14px 32px 11px 7px;"></a>
                 <hr>
             </center>
+            <a href="index.php">HOME<i class="fa fa-home" style="float: right; margin-right:50px"></i></a>
             <a href="profile.php">PROFILE<i class="fa fa-user-o" style="float: right; margin-right:50px"></i></a>
             <a href="search.php">PUBS<i class="fa fa-beer" style="float: right; margin-right:50px"></i></a>
             <a href="search.php">RESTAURANTS<i class="fa fa-cutlery" style="float: right; margin-right:50px"></i></a>
