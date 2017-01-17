@@ -29,7 +29,7 @@
             swapImage();
         }
     </script>
-    <title>Game Introduction | ONYX Hospitality</title>
+    <title>Welcome | ONYX Hospitality</title>
 
     <?php include('head.php'); ?>
 

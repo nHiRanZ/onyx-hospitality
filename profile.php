@@ -283,11 +283,11 @@ Your Favourited Places:	' . $_POST['content'] . '<br />
                                 <fieldset>
                                     <div class="form-group">
                                         <label for="email">Your Name: </label>
-                                        <input type="text" name="fullname" placeholder="Full Name" style="width: 70%"/>
+                                        <input type="text" name="fullname" placeholder="Full Name" style="width: 70%;color:black;"/>
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Your Email:&nbsp</label>
-                                        <input type="text" name="emailid" placeholder="Email" style="width: 70%"/>
+                                        <input type="text" name="emailid" placeholder="Email" style="width: 70%;color:black;"/>
                                     </div>
                                     <input type="hidden" name="content" id="content"/>
                                     <br/>
