@@ -12,32 +12,42 @@
     <title>Game Introduction | ONYX Hospitality</title>
 
     <?php include('head.php'); ?>
-
-    <!--    <link rel="stylesheet" type="text/css" media="screen"-->
-    <!--          href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">-->
-
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </head>
 
-<body style="height: 100%" onload="">
+<body style="height: 100%">
+
 
 <div class="container col-md-12 col-sm-12 col-xs-12" style="">
     <div class="highlight">
-        <span><a href="#" onclick="history.go(-1)"><i class="fa fa-angle-left fa-3x" style="margin: 15px 15px; "></i></a></span>
+        <span style="font-size:30px;cursor:pointer;margin: 15px 22px;" onclick="openNav()">&#9776;</span>
         <a href="index.php"><img src="img/logo/onyx-hospitality-logo-white.png" alt="Logo" class="highlightlogo"></a>
     </div>
 
     <div class="col-md-6 col-sm-6 col-xs-12 fill" style="float:left; background-color: blue; padding:0px 0px;">
 
         <img src="img/reservation/reservation-background.jpg" style="">
+        <?php
+        include('side-nav.php');
+        ?>
     </div>
 
-    <div class="col-md-6 col-sm-6 col-xs-12 containertext center" style="">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-xs-12">
+    <div class="col-md-6 col-sm-6 col-xs-12 containertext center">
+        <div class="row"  style="margin-left: 10px;">
+            <div class="col-sm-12 col-md-12 col-xs-12" >
+                <br><br>
                 <h4 style="float:left">SELECT PUB :</h4>
             </div>
-            <div class="row text-center" style="">
+            <div class="row text-center" style="margin-top: 0px">
                 <div class="col-md-1 col-xs-1 col-sm-1"></div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <img src="img/pubs/bar-logo1.png" style="width: 100%" id="serendib" value="Serendib Brewers & Co" class="selected">
@@ -94,32 +104,10 @@
                         </div>
                         <input type="hidden" id="dtp_input1" value=""/><br/>
                     </div>
-<!--                    <script type="text/javascript">-->
-<!--                        $(function () {-->
-<!--                            $('#datetimepicker').datetimepicker({-->
-<!--                                daysOfWeekDisabled: [0, 6]-->
-<!--                            });-->
-<!--                        });-->
-<!--                    </script>-->
+
                 </div>
                 <div class="col-md-1 col-sm-1 col-xs-1"></div>
             </div>
-
-
-            <!--            <div class="col-md-2 col-sm-0 col-xs-0"></div>-->
-            <!--            <div class="col-md-8 col-sm-12 col-xs-12">-->
-            <!--            <div class="form-group">-->
-            <!--                <div class="input-group date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">-->
-            <!--                    <input class="form-control" size="16" type="text" value="" readonly>-->
-            <!--                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>-->
-            <!--                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>-->
-            <!--                </div>-->
-            <!--                <input type="hidden" id="dtp_input1" value="" /><br/>-->
-            <!--            </div>-->
-            <!---->
-            <!--                <div class="col-md-2 col-sm-0 col-xs-0"></div>-->
-
-
             <div class="row">
                 <div class="col-md-1 col-sm-1 col-xs-1"></div>
                 <div class="col-sm-7 col-md-7 col-xs-7">
@@ -259,20 +247,6 @@
 
 </script>
 
-<!--<script>-->
-<!--    function selectedImage() {-->
-<!--        console.log('got in');-->
-<!--        var pathname = window.location.pathname; // returns the full URL-->
-<!--        if(pathname.indexOf('mysty') > -1) {-->
-<!--            $('#mysty').addClass('selected');-->
-<!--            console.log('done');-->
-<!--        }-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--    }-->
-<!--</script>-->
 
 
 <script type="text/javascript">
@@ -310,7 +284,7 @@
 </script>
 
 
-<!-- //END -->
+
 
 </body>
 
