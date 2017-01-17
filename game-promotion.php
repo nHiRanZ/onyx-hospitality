@@ -88,7 +88,7 @@
                                 <ul>
                                     <li>Additional information can be found by visiting the locations </li>
                                     <li>Directions to the location are provided</li>
-                                    <li>Each correct answer carries 100 pints which can be redeemed at any of our outlets </li>
+                                    <li>Each correct answer carries 100 points which can be redeemed at any of our outlets </li>
                                     <li>
                                     </li>
                                     <br>
