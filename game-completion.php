@@ -23,17 +23,29 @@
         }
         function appendElements() {
             var listElementOne = document.getElementById("list-element-one");
-            var one = JSON.parse(sessionStorage.getItem("submittedAnswers"));
+            var answers = JSON.parse(sessionStorage.getItem("submittedAnswers"));
+            var correctAnswers = ['The Chicken Run', 'Friday', 'Three Floyds', '1999'];
+            var points = 0;
 
             var element = document.getElementById("list-parent");
 
-            for (i = 0; i < one.length; i++) {
+            for (i = 0; i < answers.length; i++) {
                 var para = document.createElement("li");
-                var node = document.createTextNode(one[i]["value"]);
+                var node = document.createTextNode(answers[i]["value"]);
                 para.appendChild(node);
 
                 element.appendChild(para);
+
+                for (j = 0; j < correctAnswers.length; j++) {
+                    if(answers[i]["value"] == correctAnswers[j]){
+                        points = points + 100;
+                    }
+                }
+
             }
+
+            var gamePoints = document.getElementById("gamePoints");
+            gamePoints.firstChild.nodeValue = points + " Points";
 
         }
     </script>
@@ -65,7 +77,11 @@
                         <ol id="list-parent" class="w3-ul"
                             style="color: white;font-family: 'Caviar-Dreams'; align-self: center">
                         </ol>
-                        <div class="well" style="    margin-top: 10px;margin-left: 207px;margin-bottom: 10px;font-size: 40px;width: auto;height: 68px;color: #2c2e3c;"></div>
+                        <div class="well" style="line-height: 25px;margin-top: 10px;margin-left: 207px;margin-bottom: 10px;font-size: 30px;width: auto;height: 68px;color: #2c2e3c;">
+                            <p id="gamePoints" name="gamePoints">
+                                200 Points
+                            </p>
+                        </div>
                     </div>
                     <p style="margin-left: 5%; margin-right: 5%; margin-top: 5%;">You're eligible for the competition!
                         The winners of this competition will be notified through email. we are rooting for you</p>
