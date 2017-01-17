@@ -55,7 +55,7 @@
                     <option>Ratmalana</option>
                 </select>
             </div>
-            <div class="col-sm-12 col-md-12 col-xs-12 center row">
+            <div class="col-sm-12 col-md-12 col-xs-12 center row" style="margin: 0px">
                 <center>
                     <div class="row">
                         <div class="col-sm-3 col-md-3 col-xs-3">
