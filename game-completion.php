@@ -31,16 +31,19 @@
 
             for (i = 0; i < answers.length; i++) {
                 var para = document.createElement("li");
-                var node = document.createTextNode(answers[i]["value"]);
-                para.appendChild(node);
-
-                element.appendChild(para);
 
                 for (j = 0; j < correctAnswers.length; j++) {
                     if(answers[i]["value"] == correctAnswers[j]){
                         points = points + 100;
+                        var node = document.createTextNode(answers[i]["value"] + " ✓");
+                        break;
+                    } else {
+                        var node = document.createTextNode(answers[i]["value"] + " ✖");
                     }
                 }
+
+                para.appendChild(node);
+                element.appendChild(para);
 
             }
 
