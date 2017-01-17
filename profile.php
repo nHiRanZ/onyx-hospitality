@@ -258,7 +258,7 @@ Your Favourited Places:	' . $_POST['content'] . '<br />
                 <center>
                     <div class="col-sm-12 col-md-12 col-xs-12" style="margin-top: 30px">
                         <div class="">
-                            <a href="reservation.php">
+                            <a href="game-tutorial.php">
                                 <div class="button-black">TREASURE HUNT</div>
                             </a>
                         </div>
