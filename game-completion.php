@@ -78,7 +78,7 @@
                     <div class="col-sm-12 col-md-12 col-xs-12"
                          style="background-color: #2c2e3c; margin-bottom: 5%; align-content: left">
                         <ol id="list-parent" class="w3-ul"
-                            style="color: white;font-family: 'Caviar-Dreams'; align-self: center">
+                            style="color: white;font-family: 'Caviar-Dreams'; text-align: left;">
                         </ol>
                         <div class="well" style="line-height: 25px;margin-top: 10px;margin-left: 207px;margin-bottom: 10px;font-size: 30px;width: auto;height: 68px;color: #2c2e3c;">
                             <p id="gamePoints" name="gamePoints">
