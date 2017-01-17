@@ -276,17 +276,17 @@ Your Favourited Places:	' . $_POST['content'] . '<br />
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title" style="color:white">Mail My Favourites</h4>
                     </div>
-                    <div class="modal-body" style="color:white">
+                    <div class="modal-body" style="color:white; padding-left: 66px;">
                         <p>Please Enter Your Name and Email to Send the Favourites List</p>
                         <div>
                             <form name="form1" id="form1" action="" method="post">
                                 <fieldset>
                                     <div class="form-group">
-                                        <label for="email">Your Name:</label>
+                                        <label for="email">Your Name: </label>
                                         <input type="text" name="fullname" placeholder="Full Name"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Your Email:</label>
+                                        <label for="email">Your Email:&nbsp</label>
                                         <input type="text" name="emailid" placeholder="Email"/>
                                     </div>
                                     <input type="hidden" name="content" id="content"/>
@@ -297,9 +297,7 @@ Your Favourited Places:	' . $_POST['content'] . '<br />
                             <p><?php if (!empty($message)) echo $message; ?></p>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+                   
                 </div>
 
             </div>
